@@ -1,880 +1,4015 @@
 {
-  "sourceLanguage": "en",
-  "strings": {
-    "": {},
-    "%@": {},
-    "%@:": {},
-    "About Jamf Sync": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "About Jamf Sync"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Acerca de Jamf Sync"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "À propos de Jamf Sync"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Über Jamf Sync"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "Jamf Syncについて"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "关于Jamf Sync"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "關於Jamf Sync"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Over Jamf Sync"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Informazioni su Jamf Sync"}}
-      }
-    },
-    "Active": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Active"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Activo"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Actif"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Aktiv"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "アクティブ"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "活跃"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "活躍"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Actief"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Attivo"}}
-      }
-    },
-    "Active Jamf Pro Servers": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Active Jamf Pro Servers"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Servidores Jamf Pro activos"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Serveurs Jamf Pro actifs"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Aktive Jamf Pro-Server"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "アクティブなJamf Proサーバー"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "活跃的Jamf Pro服务器"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "活躍的Jamf Pro伺服器"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Actieve Jamf Pro-servers"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Server Jamf Pro attivi"}}
-      }
-    },
-    "Add File Folder": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Add File Folder"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Agregar carpeta de archivos"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Ajouter un dossier de fichiers"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Dateiordner hinzufügen"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "ファイルフォルダを追加"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "添加文件文件夹"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "添加檔案資料夾"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Bestandsmap toevoegen"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Aggiungi cartella file"}}
-      }
-    },
-    "Add file(s)": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Add file(s)"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Agregar archivo(s)"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Ajouter fichier(s)"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Datei(en) hinzufügen"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "ファイルの追加"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "添加文件"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "添加檔案"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Bestand(en) toevoegen"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Aggiungi file"}}
-      }
-    },
-    "Add Jamf Pro Server": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Add Jamf Pro Server"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Agregar servidor Jamf Pro"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Ajouter un serveur Jamf Pro"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Jamf Pro-Server hinzufügen"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "Jamf Proサーバーを追加"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "添加Jamf Pro服务器"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "添加Jamf Pro伺服器"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Jamf Pro-server toevoegen"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Aggiungi server Jamf Pro"}}
-      }
-    },
-    "Allow deletions after synchronization:": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Allow deletions after synchronization:"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Permitir eliminaciones después de la sincronización:"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Autoriser les suppressions après la synchronisation :"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Löschungen nach Synchronisation erlauben:"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "同期後に削除を許可:"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "同步后允许删除："}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "同步後允許刪除："}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Verwijderingen na synchronisatie toestaan:"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Consenti eliminazioni dopo la sincronizzazione:"}}
-      }
-    },
-    "Allow manual deletions:": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Allow manual deletions:"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Permitir eliminaciones manuales:"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Autoriser les suppressions manuelles :"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Manuelle Löschungen erlauben:"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "手動削除を許可:"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "允许手动删除："}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "允許手動刪除："}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Handmatige verwijderingen toestaan:"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Consenti eliminazioni manuali:"}}
-      }
-    },
-    "Are you sure you want to cancel the syncrhonization?": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Are you sure you want to cancel the syncrhonization?"}},
-        "es": {"stringUnit": {"state": "translated", "value": "¿Estás seguro de que quieres cancelar la sincronización?"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Êtes-vous sûr de vouloir annuler la synchronisation ?"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Sind Sie sicher, dass Sie die Synchronisation abbrechen möchten?"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "同期をキャンセルしてもよろしいですか？"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "您确定要取消同步吗？"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "您確定要取消同步嗎？"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Weet u zeker dat u de synchronisatie wilt annuleren?"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Sei sicuro di voler annullare la sincronizzazione?"}}
-      }
-    },
-    "Calculate Checksums": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Calculate Checksums"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Calcular sumas de verificación"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Calculer les sommes de contrôle"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Prüfsummen berechnen"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "チェックサムを計算"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "计算校验和"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "計算校驗和"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Controlesommen berekenen"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Calcola checksum"}}
-      }
-    },
-    "Cancel": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Cancel"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Cancelar"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Annuler"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Abbrechen"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "キャンセル"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "取消"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "取消"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Annuleren"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Annulla"}}
-      }
-    },
-    "Checksum": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Checksum"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Suma de verificación"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Somme de contrôle"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Prüfsumme"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "チェックサム"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "校验和"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "校驗和"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Controlesom"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Checksum"}}
-      }
-    },
-    "Choose active Jamf Pro instances": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Choose active Jamf Pro instances"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Elegir instancias activas de Jamf Pro"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Choisir les instances actives de Jamf Pro"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Aktive Jamf Pro-Instanzen auswählen"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "アクティブなJamf Proインスタンスを選択"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "选择活跃的Jamf Pro实例"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "選擇活躍的Jamf Pro實例"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Kies actieve Jamf Pro-instanties"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Scegli le istanze attive di Jamf Pro"}}
-      }
-    },
-    "Choose...": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Choose..."}},
-        "es": {"stringUnit": {"state": "translated", "value": "Elegir..."}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Choisir..."}},
-        "de": {"stringUnit": {"state": "translated", "value": "Auswählen..."}},
-        "ja": {"stringUnit": {"state": "translated", "value": "選択..."}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "选择..."}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "選擇..."}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Kiezen..."}},
-        "it": {"stringUnit": {"state": "translated", "value": "Scegli..."}}
-      }
-    },
-    "Close": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Close"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Cerrar"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Fermer"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Schließen"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "閉じる"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "关闭"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "關閉"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Sluiten"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Chiudi"}}
-      }
-    },
-    "Copy selected log messages to the clipboard": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Copy selected log messages to the clipboard"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Copiar mensajes de registro seleccionados al portapapeles"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Copier les messages de journal sélectionnés dans le presse-papiers"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Ausgewählte Protokollmeldungen in die Zwischenablage kopieren"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "選択したログメッセージをクリップボードにコピー"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "将选定的日志消息复制到剪贴板"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "將選定的日誌訊息複製到剪貼簿"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Geselecteerde logberichten naar het klembord kopiëren"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Copia i messaggi di log selezionati negli appunti"}}
-      }
-    },
-    "Date & Time": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Date & Time"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Fecha y hora"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Date et heure"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Datum & Uhrzeit"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "日付と時間"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "日期和时间"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "日期與時間"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Datum en tijd"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Data e ora"}}
-      }
-    },
-    "Delete": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Delete"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Eliminar"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Supprimer"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Löschen"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "削除"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "删除"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "刪除"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Verwijderen"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Elimina"}}
-      }
-    },
-    "Destination:": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Destination:"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Destino:"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Destination :"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Ziel:"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "宛先:"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "目的地："}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "目的地："}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Bestemming:"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Destinazione:"}}
-      }
-    },
-    "Dry Run": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Dry Run"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Ejecución en seco"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Exécution à blanc"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Probelauf"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "ドライラン"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "试运行"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "模擬運行"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Proefrun"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Esecuzione di prova"}}
-      }
-    },
-    "Edit": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Edit"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Editar"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Modifier"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Bearbeiten"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "編集"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "编辑"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "編輯"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Bewerken"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Modifica"}}
-      }
-    },
-    "Enter the credentials for %@: %@": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Enter the credentials for %1$@: %2$@"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Ingresa las credenciales para %1$@: %2$@"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Entrez les identifiants pour %1$@ : %2$@"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Geben Sie die Anmeldeinformationen für %1$@ ein: %2$@"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "%1$@の認証情報を入力してください: %2$@"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "输入%1$@的凭据：%2$@"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "輸入%1$@的憑證：%2$@"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Voer de inloggegevens in voor %1$@: %2$@"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Inserisci le credenziali per %1$@: %2$@"}}
-      }
-    },
-    "Enter the password for %@ (%@)": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Enter the password for %1$@ (%2$@)"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Ingresa la contraseña para %1$@ (%2$@)"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Entrez le mot de passe pour %1$@ (%2$@)"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Geben Sie das Passwort für %1$@ (%2$@) ein"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "%1$@ (%2$@) のパスワードを入力してください"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "输入%1$@ (%2$@) 的密码"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "輸入%1$@ (%2$@) 的密碼"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Voer het wachtwoord in voor %1$@ (%2$@)"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Inserisci la password per %1$@ (%2$@)"}}
-      }
-    },
-    "File Folder": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "File Folder"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Carpeta de archivos"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Dossier de fichiers"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Dateiordner"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "ファイルフォルダ"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "文件文件夹"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "檔案資料夾"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Bestandsmap"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Cartella file"}}
-      }
-    },
-    "File Share Credentials": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "File Share Credentials"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Credenciales de uso compartido de archivos"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Identifiants de partage de fichiers"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Dateifreigabe-Anmeldeinformationen"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "ファイル共有認証情報"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "文件共享凭据"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "檔案共享憑證"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Inloggegevens voor bestandsdeling"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Credenziali di condivisione file"}}
-      }
-    },
-    "Files and associated package records": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Files and associated package records"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Archivos y registros de paquetes asociados"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Fichiers et enregistrements de paquets associés"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Dateien und zugehörige Paketdatensätze"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "ファイルおよび関連するパッケージレコード"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "文件及相关包记录"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "檔案及相關套件記錄"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Bestanden en bijbehorende pakketrecords"}},
-        "it": {"stringUnit": {"state": "translated", "value": "File e record di pacchetti associati"}}
-      }
-    },
-    "Files only": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Files only"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Solo archivos"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Fichiers uniquement"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Nur Dateien"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "ファイルのみ"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "仅文件"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "僅檔案"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Alleen bestanden"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Solo file"}}
-      }
-    },
-    "Force Sync": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Force Sync"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Forzar sincronización"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Forcer la synchronisation"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Synchronisation erzwingen"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "強制同期"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "强制同步"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "強制同步"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Synchronisatie forceren"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Forza sincronizzazione"}}
-      }
-    },
-    "Goes through the motions when you click Synchronize and shows actions in the log that would normally happen, prefaced by \"[Dry Run]\", but doesn't actually transfer or remove anything.": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Goes through the motions when you click Synchronize and shows actions in the log that would normally happen, prefaced by \"[Dry Run]\", but doesn't actually transfer or remove anything."}},
-        "es": {"stringUnit": {"state": "translated", "value": "Realiza los movimientos cuando haces clic en Sincronizar y muestra en el registro las acciones que normalmente ocurrirían, precedidas por \"[Ejecución en seco]\", pero no transfiere ni elimina nada realmente."}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Simule les actions lorsque vous cliquez sur Synchroniser et affiche dans le journal les actions qui se produiraient normalement, précédées de « [Exécution à blanc] », mais ne transfère ni ne supprime rien réellement."}},
-        "de": {"stringUnit": {"state": "translated", "value": "Führt die Bewegungen aus, wenn Sie auf Synchronisieren klicken, und zeigt im Protokoll die Aktionen an, die normalerweise stattfinden würden, versehen mit dem Vorspann „[Probelauf]“, ohne jedoch tatsächlich etwas zu übertragen oder zu entfernen."}},
-        "ja": {"stringUnit": {"state": "translated", "value": "「同期」をクリックすると動作をシミュレートし、通常起こるアクションを「[ドライラン]」というプレフィックス付きでログに表示しますが、実際には何も転送または削除しません。"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "当您点击“同步”时，模拟操作并在日志中显示通常会发生的动作，前面加上“[试运行]”，但实际上不会传输或删除任何内容。"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "當您點擊「同步」時，模擬操作並在日誌中顯示通常會發生的動作，前面加上「[模擬運行]」，但實際上不會傳輸或刪除任何內容。"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Doorloopt de handelingen wanneer u op Synchroniseren klikt en toont acties in het log die normaal zouden plaatsvinden, voorafgegaan door \"[Proefrun]\", maar er wordt niets daadwerkelijk overgedragen of verwijderd."}},
-        "it": {"stringUnit": {"state": "translated", "value": "Simula le operazioni quando fai clic su Sincronizza e mostra nel registro le azioni che normalmente avverrebbero, precedute da \"[Esecuzione di prova]\", ma non trasferisce né rimuove nulla realmente."}}
-      }
-    },
-    "https://jamfproserver.com": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "https://jamfproserver.com"}},
-        "es": {"stringUnit": {"state": "translated", "value": "https://jamfproserver.com"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "https://jamfproserver.com"}},
-        "de": {"stringUnit": {"state": "translated", "value": "https://jamfproserver.com"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "https://jamfproserver.com"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "https://jamfproserver.com"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "https://jamfproserver.com"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "https://jamfproserver.com"}},
-        "it": {"stringUnit": {"state": "translated", "value": "https://jamfproserver.com"}}
-      }
-    },
-    "Info about Dry Run": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Info about Dry Run"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Información sobre la ejecución en seco"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Informations sur l'exécution à blanc"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Informationen über den Probelauf"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "ドライランについての情報"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "关于试运行的信息"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "關於模擬運行的資訊"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Informatie over proefrun"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Informazioni sull'esecuzione di prova"}}
-      }
-    },
-    "Jamf Pro Password": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Jamf Pro Password"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Contraseña de Jamf Pro"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Mot de passe Jamf Pro"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Jamf Pro-Passwort"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "Jamf Proパスワード"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "Jamf Pro密码"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "Jamf Pro密碼"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Jamf Pro-wachtwoord"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Password Jamf Pro"}}
-      }
-    },
-    "Jamf Pro Server": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Jamf Pro Server"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Servidor Jamf Pro"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Serveur Jamf Pro"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Jamf Pro-Server"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "Jamf Proサーバー"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "Jamf Pro服务器"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "Jamf Pro伺服器"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Jamf Pro-server"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Server Jamf Pro"}}
-      }
-    },
-    "Jamf Sync": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Jamf Sync"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Jamf Sync"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Jamf Sync"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Jamf Sync"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "Jamf Sync"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "Jamf Sync"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "Jamf Sync"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Jamf Sync"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Jamf Sync"}}
-      }
-    },
-    "Jamf Sync helps synchronize content to Jamf Pro distribution points.\n\nCopyright 2024, Jamf": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Jamf Sync helps synchronize content to Jamf Pro distribution points.\n\nCopyright 2024, Jamf"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Jamf Sync ayuda a sincronizar contenido con los puntos de distribución de Jamf Pro.\n\nCopyright 2024, Jamf"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Jamf Sync aide à synchroniser le contenu avec les points de distribution Jamf Pro.\n\nCopyright 2024, Jamf"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Jamf Sync hilft, Inhalte mit Jamf Pro-Verteilungspunkten zu synchronisieren.\n\nCopyright 2024, Jamf"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "Jamf Syncは、Jamf Pro配信ポイントにコンテンツを同期するのに役立ちます。\n\nCopyright 2024, Jamf"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "Jamf Sync帮助将内容同步到Jamf Pro分发点。\n\nCopyright 2024, Jamf"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "Jamf Sync幫助將內容同步到Jamf Pro分發點。\n\nCopyright 2024, Jamf"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Jamf Sync helpt inhoud te synchroniseren met Jamf Pro-distributiepunten.\n\nCopyright 2024, Jamf"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Jamf Sync aiuta a sincronizzare i contenuti con i punti di distribuzione Jamf Pro.\n\nCopyright 2024, Jamf"}}
-      }
-    },
-    "Jamf Sync User Guide": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Jamf Sync User Guide"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Guía del usuario de Jamf Sync"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Guide de l'utilisateur de Jamf Sync"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Jamf Sync-Benutzerhandbuch"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "Jamf Syncユーザーガイド"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "Jamf Sync用户指南"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "Jamf Sync用戶指南"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Jamf Sync-gebruikershandleiding"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Guida utente di Jamf Sync"}}
-      }
-    },
-    "Message": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Message"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Mensaje"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Message"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Nachricht"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "メッセージ"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "消息"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "訊息"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Bericht"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Messaggio"}}
-      }
-    },
-    "Name": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Name"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Nombre"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Nom"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Name"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "名前"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "名称"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "名稱"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Naam"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Nome"}}
-      }
-    },
-    "Name:": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Name:"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Nombre:"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Nom :"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Name:"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "名前:"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "名称："}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "名稱："}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Naam:"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Nome:"}}
-      }
-    },
-    "No": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "No"}},
-        "es": {"stringUnit": {"state": "translated", "value": "No"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Non"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Nein"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "いいえ"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "否"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "否"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Nee"}},
-        "it": {"stringUnit": {"state": "translated", "value": "No"}}
-      }
-    },
-    "OK": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "OK"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Aceptar"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "OK"}},
-        "de": {"stringUnit": {"state": "translated", "value": "OK"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "OK"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "确定"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "確定"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "OK"}},
-        "it": {"stringUnit": {"state": "translated", "value": "OK"}}
-      }
-    },
-    "Only Add or Update": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Only Add or Update"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Solo agregar o actualizar"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Ajouter ou mettre à jour uniquement"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Nur hinzufügen oder aktualisieren"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "追加または更新のみ"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "仅添加或更新"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "僅添加或更新"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Alleen toevoegen of bijwerken"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Solo aggiungi o aggiorna"}}
-      }
-    },
-    "Overall Progress: ": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Overall Progress: "}},
-        "es": {"stringUnit": {"state": "translated", "value": "Progreso general: "}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Progrès global : "}},
-        "de": {"stringUnit": {"state": "translated", "value": "Gesamtfortschritt: "}},
-        "ja": {"stringUnit": {"state": "translated", "value": "全体の進捗: "}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "总体进度："}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "總體進度："}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Totale voortgang: "}},
-        "it": {"stringUnit": {"state": "translated", "value": "Progresso complessivo: "}}
-      }
-    },
-    "Password": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Password"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Contraseña"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Mot de passe"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Passwort"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "パスワード"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "密码"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "密碼"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Wachtwoord"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Password"}}
-      }
-    },
-    "Password:": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Password:"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Contraseña:"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Mot de passe :"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Passwort:"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "パスワード:"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "密码："}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "密碼："}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Wachtwoord:"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Password:"}}
-      }
-    },
-    "Path": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Path"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Ruta"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Chemin"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Pfad"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "パス"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "路径"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "路徑"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Pad"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Percorso"}}
-      }
-    },
-    "Path:": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Path:"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Ruta:"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Chemin :"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Pfad:"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "パス:"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "路径："}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "路徑："}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Pad:"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Percorso:"}}
-      }
-    },
-    "Prompt for Jamf Pro instances on startup": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Prompt for Jamf Pro instances on startup"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Solicitar instancias de Jamf Pro al iniciar"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Demander les instances Jamf Pro au démarrage"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Bei Start nach Jamf Pro-Instanzen fragen"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "起動時にJamf Proインスタンスを要求"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "启动时提示Jamf Pro实例"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "啟動時提示Jamf Pro實例"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Vraag om Jamf Pro-instanties bij opstarten"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Richiedi istanze Jamf Pro all'avvio"}}
-      }
-    },
-    "Recommended privileges: %@": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Recommended privileges: %@"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Privilegios recomendados: %@"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Privilèges recommandés : %@"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Empfohlene Berechtigungen: %@"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "推奨される権限: %@"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "推荐权限：%@"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "推薦權限：%@"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Aanbevolen privileges: %@"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Privilegi consigliati: %@"}}
-      }
-    },
-    "Refresh": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Refresh"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Actualizar"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Actualiser"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Aktualisieren"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "更新"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "刷新"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "重新整理"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Vernieuwen"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Aggiorna"}}
-      }
-    },
-    "Remove all messages": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Remove all messages"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Eliminar todos los mensajes"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Supprimer tous les messages"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Alle Nachrichten entfernen"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "すべてのメッセージを削除"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "删除所有消息"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "刪除所有訊息"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Alle berichten verwijderen"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Rimuovi tutti i messaggi"}}
-      }
-    },
-    "Remove selected file(s)": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Remove selected file(s)"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Eliminar archivo(s) seleccionado(s)"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Supprimer le(s) fichier(s) sélectionné(s)"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Ausgewählte Datei(en) entfernen"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "選択したファイルの削除"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "删除选定文件"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "刪除選定檔案"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Geselecteerde bestand(en) verwijderen"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Rimuovi file selezionati"}}
-      }
-    },
-    "Save in Keychain": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Save in Keychain"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Guardar en el llavero"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Enregistrer dans le trousseau"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Im Schlüsselbund speichern"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "キーチェーンに保存"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "保存到钥匙链"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "儲存到鑰匙鏈"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Opslaan in sleutelhanger"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Salva nel portachiavi"}}
-      }
-    },
-    "Setup": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Setup"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Configuración"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Configuration"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Einrichtung"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "セットアップ"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "设置"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "設置"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Instellen"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Configurazione"}}
-      }
-    },
-    "Show Log": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Show Log"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Mostrar registro"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Afficher le journal"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Protokoll anzeigen"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "ログを表示"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "显示日志"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "顯示日誌"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Log tonen"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Mostra registro"}}
-      }
-    },
-    "Size": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Size"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Tamaño"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Taille"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Größe"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "サイズ"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "大小"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "大小"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Grootte"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Dimensione"}}
-      }
-    },
-    "Source:": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Source:"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Fuente:"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Source :"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Quelle:"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "ソース:"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "来源："}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "來源："}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Bron:"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Sorgente:"}}
-      }
-    },
-    "Sync": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Sync"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Sincronizar"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Synchroniser"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Synchronisieren"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "同期"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "同步"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "同步"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Synchroniseren"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Sincronizza"}}
-      }
-    },
-    "Synchronize": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Synchronize"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Sincronizar"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Synchroniser"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Synchronisieren"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "同期する"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "同步"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "同步"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Synchroniseren"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Sincronizza"}}
-      }
-    },
-    "Test": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Test"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Probar"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Tester"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Testen"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "テスト"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "测试"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "測試"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Testen"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Test"}}
-      }
-    },
-    "Title": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Title"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Título"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Titre"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Titel"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "タイトル"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "标题"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "標題"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Titel"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Titolo"}}
-      }
-    },
-    "Type": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Type"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Tipo"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Type"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Typ"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "タイプ"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "类型"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "類型"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Type"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Tipo"}}
-      }
-    },
-    "URL or Folder": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "URL or Folder"}},
-        "es": {"stringUnit": {"state": "translated", "value": "URL o carpeta"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "URL ou dossier"}},
-        "de": {"stringUnit": {"state": "translated", "value": "URL oder Ordner"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "URLまたはフォルダ"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "URL或文件夹"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "URL或資料夾"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "URL of map"}},
-        "it": {"stringUnit": {"state": "translated", "value": "URL o cartella"}}
-      }
-    },
-    "URL:": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "URL:"}},
-        "es": {"stringUnit": {"state": "translated", "value": "URL:"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "URL :"}},
-        "de": {"stringUnit": {"state": "translated", "value": "URL:"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "URL:"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "URL："}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "URL："}},
-        "nl": {"stringUnit": {"state": "translated", "value": "URL:"}},
-        "it": {"stringUnit": {"state": "translated", "value": "URL:"}}
-      }
-    },
-    "Use Client API": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Use Client API"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Usar API de cliente"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Utiliser l'API client"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Client-API verwenden"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "クライアントAPIを使用"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "使用客户端API"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "使用客戶端API"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Gebruik Client API"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Usa API client"}}
-      }
-    },
-    "Username:": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Username:"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Nombre de usuario:"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Nom d'utilisateur :"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Benutzername:"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "ユーザー名:"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "用户名："}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "用戶名："}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Gebruikersnaam:"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Nome utente:"}}
-      }
-    },
-    "Yes": {
-      "localizations": {
-        "en": {"stringUnit": {"state": "new", "value": "Yes"}},
-        "es": {"stringUnit": {"state": "translated", "value": "Sí"}},
-        "fr": {"stringUnit": {"state": "translated", "value": "Oui"}},
-        "de": {"stringUnit": {"state": "translated", "value": "Ja"}},
-        "ja": {"stringUnit": {"state": "translated", "value": "はい"}},
-        "zh-Hans": {"stringUnit": {"state": "translated", "value": "是"}},
-        "zh-Hant": {"stringUnit": {"state": "translated", "value": "是"}},
-        "nl": {"stringUnit": {"state": "translated", "value": "Ja"}},
-        "it": {"stringUnit": {"state": "translated", "value": "Sì"}}
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ""
+          }
+        }
+      },
+      "shouldTranslate" : false
+    },
+    "%@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@"
+          }
+        }
+      },
+      "shouldTranslate" : false
+    },
+    "%@:" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@:"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@:"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@:"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@:"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@:"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@:"
+          }
+        }
+      },
+      "shouldTranslate" : false
+    },
+    "About Jamf Sync" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Über Jamf Sync"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "About Jamf Sync"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acerca de Jamf Sync"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "À propos de Jamf Sync"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informazioni su Jamf Sync"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Syncについて"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Over Jamf Sync"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关于Jamf Sync"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關於Jamf Sync"
+          }
+        }
+      }
+    },
+    "Active" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktiv"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Active"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activo"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actif"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attivo"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アクティブ"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actief"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "活跃"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "活躍"
+          }
+        }
+      }
+    },
+    "Active Jamf Pro Servers" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktive Jamf Pro-Server"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Active Jamf Pro Servers"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Servidores Jamf Pro activos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serveurs Jamf Pro actifs"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Server Jamf Pro attivi"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アクティブなJamf Proサーバー"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actieve Jamf Pro-servers"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "活跃的Jamf Pro服务器"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "活躍的Jamf Pro伺服器"
+          }
+        }
+      }
+    },
+    "Add File Folder" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dateiordner hinzufügen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Add File Folder"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agregar carpeta de archivos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter un dossier de fichiers"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi cartella file"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ファイルフォルダを追加"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bestandsmap toevoegen"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加文件文件夹"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加檔案資料夾"
+          }
+        }
+      }
+    },
+    "Add file(s)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datei(en) hinzufügen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Add file(s)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agregar archivo(s)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter fichier(s)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi file"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ファイルの追加"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bestand(en) toevoegen"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加文件"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加檔案"
+          }
+        }
+      }
+    },
+    "Add Jamf Pro Server" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Pro-Server hinzufügen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Add Jamf Pro Server"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agregar servidor Jamf Pro"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter un serveur Jamf Pro"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi server Jamf Pro"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Proサーバーを追加"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Pro-server toevoegen"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加Jamf Pro服务器"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加Jamf Pro伺服器"
+          }
+        }
+      }
+    },
+    "Allow deletions after synchronization:" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Löschungen nach Synchronisation erlauben:"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Allow deletions after synchronization:"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permitir eliminaciones después de la sincronización:"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autoriser les suppressions après la synchronisation :"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consenti eliminazioni dopo la sincronizzazione:"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同期後に削除を許可:"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verwijderingen na synchronisatie toestaan:"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同步后允许删除："
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同步後允許刪除："
+          }
+        }
+      }
+    },
+    "Allow manual deletions:" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manuelle Löschungen erlauben:"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Allow manual deletions:"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permitir eliminaciones manuales:"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autoriser les suppressions manuelles :"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consenti eliminazioni manuali:"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "手動削除を許可:"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Handmatige verwijderingen toestaan:"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "允许手动删除："
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "允許手動刪除："
+          }
+        }
+      }
+    },
+    "Are you sure you want to cancel the syncrhonization?" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sind Sie sicher, dass Sie die Synchronisation abbrechen möchten?"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Are you sure you want to cancel the syncrhonization?"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Estás seguro de que quieres cancelar la sincronización?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Êtes-vous sûr de vouloir annuler la synchronisation ?"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sei sicuro di voler annullare la sincronizzazione?"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同期をキャンセルしてもよろしいですか？"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weet u zeker dat u de synchronisatie wilt annuleren?"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您确定要取消同步吗？"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "您確定要取消同步嗎？"
+          }
+        }
+      }
+    },
+    "Calculate Checksums" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prüfsummen berechnen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Calculate Checksums"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calcular sumas de verificación"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calculer les sommes de contrôle"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calcola checksum"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "チェックサムを計算"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Controlesommen berekenen"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "计算校验和"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "計算校驗和"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abbrechen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Cancel"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuler"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annulla"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "キャンセル"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuleren"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
+          }
+        }
+      }
+    },
+    "Checksum" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prüfsumme"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Checksum"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suma de verificación"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Somme de contrôle"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Checksum"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "チェックサム"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Controlesom"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "校验和"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "校驗和"
+          }
+        }
+      }
+    },
+    "Choose active Jamf Pro instances" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktive Jamf Pro-Instanzen auswählen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Choose active Jamf Pro instances"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elegir instancias activas de Jamf Pro"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisir les instances actives de Jamf Pro"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli le istanze attive di Jamf Pro"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アクティブなJamf Proインスタンスを選択"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kies actieve Jamf Pro-instanties"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择活跃的Jamf Pro实例"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選擇活躍的Jamf Pro實例"
+          }
+        }
+      }
+    },
+    "Choose..." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auswählen..."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Choose..."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elegir..."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisir..."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli..."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選択..."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kiezen..."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择..."
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選擇..."
+          }
+        }
+      }
+    },
+    "Close" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schließen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Close"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerrar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fermer"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiudi"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "閉じる"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sluiten"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关闭"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關閉"
+          }
+        }
+      }
+    },
+    "Copy selected log messages to the clipboard" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ausgewählte Protokollmeldungen in die Zwischenablage kopieren"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Copy selected log messages to the clipboard"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copiar mensajes de registro seleccionados al portapapeles"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copier les messages de journal sélectionnés dans le presse-papiers"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copia i messaggi di log selezionati negli appunti"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選択したログメッセージをクリップボードにコピー"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geselecteerde logberichten naar het klembord kopiëren"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "将选定的日志消息复制到剪贴板"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "將選定的日誌訊息複製到剪貼簿"
+          }
+        }
+      }
+    },
+    "Date & Time" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datum & Uhrzeit"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Date & Time"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fecha y hora"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Date et heure"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data e ora"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "日付と時間"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datum en tijd"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "日期和时间"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "日期與時間"
+          }
+        }
+      }
+    },
+    "Delete" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Löschen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Delete"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eliminar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "削除"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verwijderen"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刪除"
+          }
+        }
+      }
+    },
+    "Destination:" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ziel:"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Destination:"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Destino:"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Destination :"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Destinazione:"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "宛先:"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bestemming:"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "目的地："
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "目的地："
+          }
+        }
+      }
+    },
+    "Dry Run" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Probelauf"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Dry Run"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ejecución en seco"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Exécution à blanc"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esecuzione di prova"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ドライラン"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proefrun"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "试运行"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "模擬運行"
+          }
+        }
+      }
+    },
+    "Edit" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bearbeiten"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Edit"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Editar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifier"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifica"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "編集"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bewerken"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "编辑"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "編輯"
+          }
+        }
+      }
+    },
+    "Enter the credentials for %@: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geben Sie die Anmeldeinformationen für %1$@ ein: %2$@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Enter the credentials for %1$@: %2$@"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingresa las credenciales para %1$@: %2$@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entrez les identifiants pour %1$@ : %2$@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inserisci le credenziali per %1$@: %2$@"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@の認証情報を入力してください: %2$@"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voer de inloggegevens in voor %1$@: %2$@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "输入%1$@的凭据：%2$@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "輸入%1$@的憑證：%2$@"
+          }
+        }
+      }
+    },
+    "Enter the password for %@ (%@)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geben Sie das Passwort für %1$@ (%2$@) ein"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Enter the password for %1$@ (%2$@)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingresa la contraseña para %1$@ (%2$@)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entrez le mot de passe pour %1$@ (%2$@)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inserisci la password per %1$@ (%2$@)"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ (%2$@) のパスワードを入力してください"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voer het wachtwoord in voor %1$@ (%2$@)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "输入%1$@ (%2$@) 的密码"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "輸入%1$@ (%2$@) 的密碼"
+          }
+        }
+      }
+    },
+    "File Folder" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dateiordner"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "File Folder"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carpeta de archivos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dossier de fichiers"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cartella file"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ファイルフォルダ"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bestandsmap"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "文件文件夹"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "檔案資料夾"
+          }
+        }
+      }
+    },
+    "File Share Credentials" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dateifreigabe-Anmeldeinformationen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "File Share Credentials"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Credenciales de uso compartido de archivos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Identifiants de partage de fichiers"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Credenziali di condivisione file"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ファイル共有認証情報"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inloggegevens voor bestandsdeling"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "文件共享凭据"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "檔案共享憑證"
+          }
+        }
+      }
+    },
+    "Files and associated package records" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dateien und zugehörige Paketdatensätze"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Files and associated package records"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Archivos y registros de paquetes asociados"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fichiers et enregistrements de paquets associés"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "File e record di pacchetti associati"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ファイルおよび関連するパッケージレコード"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bestanden en bijbehorende pakketrecords"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "文件及相关包记录"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "檔案及相關套件記錄"
+          }
+        }
+      }
+    },
+    "Files only" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nur Dateien"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Files only"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solo archivos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fichiers uniquement"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solo file"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ファイルのみ"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alleen bestanden"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "仅文件"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "僅檔案"
+          }
+        }
+      }
+    },
+    "Force Sync" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synchronisation erzwingen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Force Sync"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forzar sincronización"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forcer la synchronisation"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forza sincronizzazione"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "強制同期"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synchronisatie forceren"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "强制同步"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "強制同步"
+          }
+        }
+      }
+    },
+    "Goes through the motions when you click Synchronize and shows actions in the log that would normally happen, prefaced by \"[Dry Run]\", but doesn't actually transfer or remove anything." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Führt die Bewegungen aus, wenn Sie auf Synchronisieren klicken, und zeigt im Protokoll die Aktionen an, die normalerweise stattfinden würden, versehen mit dem Vorspann „[Probelauf]“, ohne jedoch tatsächlich etwas zu übertragen oder zu entfernen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Goes through the motions when you click Synchronize and shows actions in the log that would normally happen, prefaced by \"[Dry Run]\", but doesn't actually transfer or remove anything."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Realiza los movimientos cuando haces clic en Sincronizar y muestra en el registro las acciones que normalmente ocurrirían, precedidas por \"[Ejecución en seco]\", pero no transfiere ni elimina nada realmente."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simule les actions lorsque vous cliquez sur Synchroniser et affiche dans le journal les actions qui se produiraient normalement, précédées de « [Exécution à blanc] », mais ne transfère ni ne supprime rien réellement."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simula le operazioni quando fai clic su Sincronizza e mostra nel registro le azioni che normalmente avverrebbero, precedute da \"[Esecuzione di prova]\", ma non trasferisce né rimuove nulla realmente."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "「同期」をクリックすると動作をシミュレートし、通常起こるアクションを「[ドライラン]」というプレフィックス付きでログに表示しますが、実際には何も転送または削除しません。"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Doorloopt de handelingen wanneer u op Synchroniseren klikt en toont acties in het log die normaal zouden plaatsvinden, voorafgegaan door \"[Proefrun]\", maar er wordt niets daadwerkelijk overgedragen of verwijderd."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "当您点击“同步”时，模拟操作并在日志中显示通常会发生的动作，前面加上“[试运行]”，但实际上不会传输或删除任何内容。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "當您點擊「同步」時，模擬操作並在日誌中顯示通常會發生的動作，前面加上「[模擬運行]」，但實際上不會傳輸或刪除任何內容。"
+          }
+        }
+      }
+    },
+    "https://jamfproserver.com" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "https://jamfproserver.com"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "https://jamfproserver.com"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "https://jamfproserver.com"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "https://jamfproserver.com"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "https://jamfproserver.com"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "https://jamfproserver.com"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "https://jamfproserver.com"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "https://jamfproserver.com"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "https://jamfproserver.com"
+          }
+        }
+      }
+    },
+    "Info about Dry Run" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informationen über den Probelauf"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Info about Dry Run"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Información sobre la ejecución en seco"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informations sur l'exécution à blanc"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informazioni sull'esecuzione di prova"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ドライランについての情報"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informatie over proefrun"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关于试运行的信息"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關於模擬運行的資訊"
+          }
+        }
+      }
+    },
+    "Jamf Pro Password" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Pro-Passwort"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Jamf Pro Password"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contraseña de Jamf Pro"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mot de passe Jamf Pro"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password Jamf Pro"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Proパスワード"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Pro-wachtwoord"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Pro密码"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Pro密碼"
+          }
+        }
+      }
+    },
+    "Jamf Pro Server" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Pro-Server"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Jamf Pro Server"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Servidor Jamf Pro"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serveur Jamf Pro"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Server Jamf Pro"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Proサーバー"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Pro-server"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Pro服务器"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Pro伺服器"
+          }
+        }
+      }
+    },
+    "Jamf Sync" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Sync"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Jamf Sync"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Sync"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Sync"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Sync"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Sync"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Sync"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Sync"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Sync"
+          }
+        }
+      }
+    },
+    "Jamf Sync helps synchronize content to Jamf Pro distribution points.\n\nCopyright 2024, Jamf" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Sync hilft, Inhalte mit Jamf Pro-Verteilungspunkten zu synchronisieren.\n\nCopyright 2024, Jamf"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Jamf Sync helps synchronize content to Jamf Pro distribution points.\n\nCopyright 2024, Jamf"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Sync ayuda a sincronizar contenido con los puntos de distribución de Jamf Pro.\n\nCopyright 2024, Jamf"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Sync aide à synchroniser le contenu avec les points de distribution Jamf Pro.\n\nCopyright 2024, Jamf"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Sync aiuta a sincronizzare i contenuti con i punti di distribuzione Jamf Pro.\n\nCopyright 2024, Jamf"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Syncは、Jamf Pro配信ポイントにコンテンツを同期するのに役立ちます。\n\nCopyright 2024, Jamf"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Sync helpt inhoud te synchroniseren met Jamf Pro-distributiepunten.\n\nCopyright 2024, Jamf"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Sync帮助将内容同步到Jamf Pro分发点。\n\nCopyright 2024, Jamf"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Sync幫助將內容同步到Jamf Pro分發點。\n\nCopyright 2024, Jamf"
+          }
+        }
+      }
+    },
+    "Jamf Sync User Guide" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Sync-Benutzerhandbuch"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Jamf Sync User Guide"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guía del usuario de Jamf Sync"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guide de l'utilisateur de Jamf Sync"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guida utente di Jamf Sync"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Syncユーザーガイド"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Sync-gebruikershandleiding"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Sync用户指南"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jamf Sync用戶指南"
+          }
+        }
+      }
+    },
+    "Message" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nachricht"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Message"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mensaje"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Message"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Messaggio"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メッセージ"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bericht"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "消息"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "訊息"
+          }
+        }
+      }
+    },
+    "Name" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Name"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombre"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nom"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "名前"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Naam"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "名称"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "名稱"
+          }
+        }
+      }
+    },
+    "Name:" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name:"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Name:"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombre:"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nom :"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome:"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "名前:"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Naam:"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "名称："
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "名稱："
+          }
+        }
+      }
+    },
+    "No" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nein"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "No"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "いいえ"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nee"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "否"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "否"
+          }
+        }
+      }
+    },
+    "OK" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "OK"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aceptar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "确定"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "確定"
+          }
+        }
+      }
+    },
+    "Only Add or Update" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nur hinzufügen oder aktualisieren"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Only Add or Update"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solo agregar o actualizar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter ou mettre à jour uniquement"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solo aggiungi o aggiorna"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "追加または更新のみ"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alleen toevoegen of bijwerken"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "仅添加或更新"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "僅添加或更新"
+          }
+        }
+      }
+    },
+    "Overall Progress: " : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gesamtfortschritt: "
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Overall Progress: "
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Progreso general: "
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Progrès global : "
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Progresso complessivo: "
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全体の進捗: "
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Totale voortgang: "
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "总体进度："
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "總體進度："
+          }
+        }
+      }
+    },
+    "Password" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passwort"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Password"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contraseña"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mot de passe"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パスワード"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wachtwoord"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "密码"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "密碼"
+          }
+        }
+      }
+    },
+    "Password:" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passwort:"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Password:"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contraseña:"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mot de passe :"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password:"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パスワード:"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wachtwoord:"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "密码："
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "密碼："
+          }
+        }
+      }
+    },
+    "Path" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pfad"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Path"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ruta"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chemin"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Percorso"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パス"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pad"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "路径"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "路徑"
+          }
+        }
+      }
+    },
+    "Path:" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pfad:"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Path:"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ruta:"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chemin :"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Percorso:"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パス:"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pad:"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "路径："
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "路徑："
+          }
+        }
+      }
+    },
+    "Prompt for Jamf Pro instances on startup" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bei Start nach Jamf Pro-Instanzen fragen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Prompt for Jamf Pro instances on startup"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solicitar instancias de Jamf Pro al iniciar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Demander les instances Jamf Pro au démarrage"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Richiedi istanze Jamf Pro all'avvio"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "起動時にJamf Proインスタンスを要求"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vraag om Jamf Pro-instanties bij opstarten"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启动时提示Jamf Pro实例"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "啟動時提示Jamf Pro實例"
+          }
+        }
+      }
+    },
+    "Recommended privileges: %@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empfohlene Berechtigungen: %@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Recommended privileges: %@"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privilegios recomendados: %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privilèges recommandés : %@"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privilegi consigliati: %@"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "推奨される権限: %@"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aanbevolen privileges: %@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "推荐权限：%@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "推薦權限：%@"
+          }
+        }
+      }
+    },
+    "Refresh" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktualisieren"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Refresh"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actualizar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actualiser"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiorna"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vernieuwen"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刷新"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "重新整理"
+          }
+        }
+      }
+    },
+    "Remove all messages" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle Nachrichten entfernen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Remove all messages"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eliminar todos los mensajes"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer tous les messages"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rimuovi tutti i messaggi"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべてのメッセージを削除"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle berichten verwijderen"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除所有消息"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刪除所有訊息"
+          }
+        }
+      }
+    },
+    "Remove selected file(s)" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ausgewählte Datei(en) entfernen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Remove selected file(s)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eliminar archivo(s) seleccionados"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer le(s) fichier(s) sélectionné(s)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rimuovi file selezionati"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選択したファイルの削除"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geselecteerde bestand(en) verwijderen"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除选定文件"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刪除選定檔案"
+          }
+        }
+      }
+    },
+    "Save in Keychain" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Im Schlüsselbund speichern"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Save in Keychain"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guardar en el llavero"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enregistrer dans le trousseau"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salva nel portachiavi"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "キーチェーンに保存"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opslaan in sleutelhanger"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保存到钥匙链"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "儲存到鑰匙鏈"
+          }
+        }
+      }
+    },
+    "Setup" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einrichtung"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Setup"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configuración"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configuration"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configurazione"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "セットアップ"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instellen"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設置"
+          }
+        }
+      }
+    },
+    "Show Log" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Protokoll anzeigen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Show Log"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar registro"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afficher le journal"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra registro"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ログを表示"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log tonen"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "显示日志"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "顯示日誌"
+          }
+        }
+      }
+    },
+    "Size" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Größe"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Size"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tamaño"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taille"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dimensione"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "サイズ"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grootte"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大小"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大小"
+          }
+        }
+      }
+    },
+    "Source:" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quelle:"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Source:"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fuente:"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Source :"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sorgente:"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ソース:"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bron:"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "来源："
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "來源："
+          }
+        }
+      }
+    },
+    "Sync" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synchronisation"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Sync"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sincronización"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synchronisation"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sincronizzazione"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同期"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synchronisatie"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同步"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同步"
+          }
+        }
+      }
+    },
+    "Synchronize" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synchronisieren"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Synchronize"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sincronizar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synchroniser"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sincronizza"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同期する"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synchroniseren"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同步"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同步"
+          }
+        }
+      }
+    },
+    "Test" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Testen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Test"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Probar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tester"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Test"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "テスト"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Testen"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "测试"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "測試"
+          }
+        }
+      }
+    },
+    "Title" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titel"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Title"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Título"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titre"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titolo"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "タイトル"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titel"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "标题"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "標題"
+          }
+        }
+      }
+    },
+    "Type" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Typ"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Type"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipo"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Type"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipo"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "タイプ"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Type"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "类型"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "類型"
+          }
+        }
+      }
+    },
+    "URL or Folder" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL oder Ordner"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "URL or Folder"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL o carpeta"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL ou dossier"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL o cartella"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URLまたはフォルダ"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL of map"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL或文件夹"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL或資料夾"
+          }
+        }
+      }
+    },
+    "URL:" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL:"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "URL:"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL:"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL :"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL:"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL:"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL:"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL："
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "URL："
+          }
+        }
+      }
+    },
+    "Use Client API" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Client-API verwenden"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Use Client API"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usar API de cliente"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utiliser l'API client"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa API client"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "クライアントAPIを使用"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gebruik Client API"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用客户端API"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用客戶端API"
+          }
+        }
+      }
+    },
+    "Username:" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Benutzername:"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Username:"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombre de usuario:"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nom d'utilisateur :"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome utente:"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ユーザー名:"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gebruikersnaam:"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用户名："
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用戶名："
+          }
+        }
+      }
+    },
+    "Yes" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ja"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Yes"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sí"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oui"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sì"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "はい"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ja"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "是"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "是"
+          }
+        }
       }
     }
   },
-  "version": "1.0"
+  "version" : "1.0"
 }
