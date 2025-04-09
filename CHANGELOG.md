@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.0] - 2025-4-9
+### Features
+- Added language support for Chinese (simplified), Chinese (traditional), Dutch, German, French, Italian, Japanese, and Spanish.
+
 ## [1.5.1] - 2025-2-10
 ### Bug fixes
 - No longer delete keychain credentials when mounting a file share fails.
