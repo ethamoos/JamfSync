@@ -446,18 +446,7 @@ class JamfProInstance: SavableItem {
 
     private func hasUapiPackagesInterface() async throws -> Bool {
         guard let jamfProVersion else { return false }
-        // If it's version 11.5 or greater, then it's supported
-        let versionParts = jamfProVersion.split(separator: ".")
-        if versionParts.count >= 2 {
-            if let majorVersion = Int(versionParts[0]), let minorVersion = Int(versionParts[1]) {
-                if majorVersion > 11 {
-                    return true
-                } else if majorVersion == 11 && minorVersion >= 5 {
-                    return true
-                }
-            }
-        }
-        return false
+        return VersionInfo.versionIsAtLeast(version: jamfProVersion, major: 11, minor: 5)
     }
 
     private func loadFileShares() async throws {
@@ -470,18 +459,7 @@ class JamfProInstance: SavableItem {
 
     private func hasNewFileShareApi() async -> Bool {
         guard let jamfProVersion else { return false }
-        // If it's version 11.5 or greater, then it's supported
-        let versionParts = jamfProVersion.split(separator: ".")
-        if versionParts.count >= 2 {
-            if let majorVersion = Int(versionParts[0]), let minorVersion = Int(versionParts[1]) {
-                if majorVersion > 11 {
-                    return true
-                } else if majorVersion == 11 && minorVersion >= 6 {
-                    return true
-                }
-            }
-        }
-        return false
+        return VersionInfo.versionIsAtLeast(version: jamfProVersion, major: 11, minor: 6)
     }
 
     private func loadFileSharesLegacyApi() async throws {

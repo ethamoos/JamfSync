@@ -95,8 +95,7 @@ class Jcds2Dp: DistributionPoint, RenewTokenProtocol {
 
     override func finalizeTransfer() async throws {
         guard let jamfProInstanceId, let jamfProInstance = findJamfProInstance(id: jamfProInstanceId), let url = jamfProInstance.url else { throw ServerCommunicationError.noJamfProUrl }
-        // NOTE: This API will be deprecated after this ticket is completed: https://jamfpdd.atlassian.net/browse/JPXI-7661.
-        // It will most likely be /api/v1/cloud-distribution-point/refresh-inventory.
+        // NOTE: This API will be deprecated soon. It will most likely be /api/v1/cloud-distribution-point/refresh-inventory.
         let refreshInventoryUrl = url.appendingPathComponent("/api/v1/jcds/refresh-inventory")
 
         let _ = try await jamfProInstance.dataRequest(url: refreshInventoryUrl, httpMethod: "POST")
