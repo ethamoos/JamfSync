@@ -38,23 +38,43 @@ class FileShareDp: DistributionPoint {
         super.init(name: name)
     }
 
-    init(JsonDpDetail: JsonDpDetail) {
-        self.jamfProId = JsonDpDetail.id ?? -1
-        self.address = JsonDpDetail.ip_address
-        self.isMaster = JsonDpDetail.is_master ?? false
-        if let connectionTypeString = JsonDpDetail.connection_type, let connectionType = ConnectionType(rawValue: connectionTypeString) {
+    init(jsonDpDetail: JsonDpDetail) {
+        self.jamfProId = jsonDpDetail.id ?? -1
+        self.address = jsonDpDetail.ip_address
+        self.isMaster = jsonDpDetail.is_master ?? false
+        if let connectionTypeString = jsonDpDetail.connection_type, let connectionType = ConnectionType(rawValue: connectionTypeString) {
             self.connectionType = connectionType
         } else {
             self.connectionType = .smb
         }
-        self.shareName = JsonDpDetail.share_name
-        self.workgroupOrDomain = JsonDpDetail.workgroup_or_domain
-        self.sharePort = JsonDpDetail.share_port
-        self.readOnlyUsername = JsonDpDetail.read_only_username
-        self.readOnlyPassword = nil // This would normally be from JsonDpDetail.read_only_password_sha256, but that's all asterisks
-        self.readWriteUsername = JsonDpDetail.read_write_username
-        self.readWritePassword = nil // This would normally be from JsonDpDetail.read_write_password_sha256, but that's all asterisks
-        super.init(name: JsonDpDetail.name ?? "")
+        self.shareName = jsonDpDetail.share_name
+        self.workgroupOrDomain = jsonDpDetail.workgroup_or_domain
+        self.sharePort = jsonDpDetail.share_port
+        self.readOnlyUsername = jsonDpDetail.read_only_username
+        self.readOnlyPassword = nil // This would normally be from jsonDpDetail.read_only_password_sha256, but that's all asterisks
+        self.readWriteUsername = jsonDpDetail.read_write_username
+        self.readWritePassword = nil // This would normally be from jsonDpDetail.read_write_password_sha256, but that's all asterisks
+        super.init(name: jsonDpDetail.name ?? "")
+        loadKeychainData()
+    }
+
+    init(jsonUapiDpDetail: JsonUapiDistributionPointDetail) {
+        self.jamfProId = Int(jsonUapiDpDetail.id ?? "-1") ?? -1
+        self.address = jsonUapiDpDetail.serverName
+        self.isMaster = jsonUapiDpDetail.principal ?? false
+        if let connectionTypeString = jsonUapiDpDetail.fileSharingConnectionType, let connectionType = ConnectionType(rawValue: connectionTypeString) {
+            self.connectionType = connectionType
+        } else {
+            self.connectionType = .smb
+        }
+        self.shareName = jsonUapiDpDetail.shareName
+        self.workgroupOrDomain = jsonUapiDpDetail.workgroup
+        self.sharePort = jsonUapiDpDetail.port
+        self.readOnlyUsername = jsonUapiDpDetail.readOnlyUsername
+        self.readOnlyPassword = nil
+        self.readWriteUsername = jsonUapiDpDetail.readWriteUsername
+        self.readWritePassword = nil
+        super.init(name: jsonUapiDpDetail.name ?? "")
         loadKeychainData()
     }
 

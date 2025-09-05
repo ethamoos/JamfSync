@@ -39,7 +39,7 @@ final class FileShareDpTests: XCTestCase {
         let jsonDpDetail = JsonDpDetail()
 
         // When
-        let fileShareDp = FileShareDp(JsonDpDetail: jsonDpDetail)
+        let fileShareDp = FileShareDp(jsonDpDetail: jsonDpDetail)
 
         // Then
         XCTAssertEqual(fileShareDp.name, "")
@@ -71,7 +71,7 @@ final class FileShareDpTests: XCTestCase {
         jsonDpDetail.workgroup_or_domain = "Workgroup"
 
         // When
-        let fileShareDp = FileShareDp(JsonDpDetail: jsonDpDetail)
+        let fileShareDp = FileShareDp(jsonDpDetail: jsonDpDetail)
 
         // Then
         XCTAssertEqual(fileShareDp.name, "FileShareDp")
@@ -103,7 +103,7 @@ final class FileShareDpTests: XCTestCase {
         jsonDpDetail.workgroup_or_domain = "Workgroup"
 
         // When
-        let fileShareDp = FileShareDp(JsonDpDetail: jsonDpDetail)
+        let fileShareDp = FileShareDp(jsonDpDetail: jsonDpDetail)
 
         // Then
         XCTAssertEqual(fileShareDp.name, "FileShareDp")
@@ -135,7 +135,7 @@ final class FileShareDpTests: XCTestCase {
         jsonDpDetail.workgroup_or_domain = "Workgroup"
 
         // When
-        let fileShareDp = FileShareDp(JsonDpDetail: jsonDpDetail)
+        let fileShareDp = FileShareDp(jsonDpDetail: jsonDpDetail)
 
         // Then
         XCTAssertEqual(fileShareDp.name, "FileShareDp")

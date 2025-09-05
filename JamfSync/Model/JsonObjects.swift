@@ -172,6 +172,33 @@ struct JsonUapiPackageDetail: Codable {
     }
 }
 
+struct JsonUapiDistributionPoint: Decodable {
+    let totalCount: Int
+    let results: [JsonUapiDistributionPointDetail]
+}
+
+struct JsonUapiDistributionPointDetail: Codable {
+    let id: String?
+    let name: String?
+    let serverName: String?
+    var fileSharingConnectionType: String?
+    let shareName: String?
+    let workgroup: String?
+    let port: Int?
+    var readWriteUsername: String?
+    var readOnlyUsername: String?
+    var principal: Bool?
+    var backupDistributionPointId: String?
+    var sshUsername: String?
+    var localPathToShare: String?
+    var httpsEnabled: Bool?
+    let httpsPort: Int?
+    var httpsContext: String?
+    var httpsSecurityType: String?
+    var httpsUsername: String?
+    var enableLoadBalancing: Bool?
+}
+
 struct JsonUapiAddPackageResult: Decodable {
     let id: String
     let href: String?

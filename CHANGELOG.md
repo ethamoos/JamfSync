@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.2] - 2025-9-5
+### Bug fixes
+- Added an API call that tells Jamf Pro to update the inventory after uploading to a Cloud DP (GitHub issue #16 "Packages uploaded through Jamf Sync sometimes do not install from a policy", #41 "Packages failing on install when syncing with 1.3.3+", #63 "The packages uploaded to S3 cloud DP via Jamf Sync couldn't be downloaded", #66 "Where does JamfSync store calculated Checksums for destination?").
+- Updated the recommended privileges to reference "Jamf Cloud Distribution Service Files" instead of "Jamf Content Distribution Service Files"(GitHub issue #72 "API Endpoint terminology changes"). 
+- Fixed an issue caused by a Jamf Pro change where checking to see if a distribution point had the ability to upload to a cloud instance would error out (GitHub issue #73 "Error connecting to JAMF Pro 11.20.0").
+
+### Enhancements
+- Updated some API calls from the deprecated version to the non-deprecated version.
+
 ## [1.5.1] - 2025-2-10
 ### Bug fixes
 - No longer delete keychain credentials when mounting a file share fails.

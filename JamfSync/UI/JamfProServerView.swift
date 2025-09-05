@@ -20,8 +20,8 @@ struct JamfProServerView: View {
     @State var testResultMessage = ""
     @State var testInProgress = false
     let keychainHelper = KeychainHelper()
-    let recommendedClientApiPrivileges = "Update Packages, Jamf Packages Action, Read Cloud Services Settings, Read Jamf Content Distribution Server Files, Create Packages, Delete Packages, Read Cloud Distribution Point, Update Cloud Distribution Point, Create Jamf Content Distribution Server Files, Read Distribution Points, Read Packages, Delete Jamf Content Distribution Server Files"
-    let recommendedCapiPrivileges = "Packages (Create, Read, Update, Delete), Categories (Read), File share distribution points (Read), Jamf Content Distribution Server Files (Create, Read, Delete)"
+    let recommendedClientApiPrivileges = "Update Packages, Jamf Packages Action, Read Cloud Services Settings, Read Jamf Cloud Distribution Service Files, Create Packages, Delete Packages, Read Cloud Distribution Point, Update Cloud Distribution Point, Create Jamf Cloud Distribution Service Files, Read Distribution Points, Read Packages, Delete Jamf Cloud Distribution Service Files"
+    let recommendedCapiPrivileges = "Packages (Create, Read, Update, Delete), Categories (Read), File share distribution points (Read), Jamf Cloud Distribution Service Files (Create, Read, Delete)"
 
     var body: some View {
         VStack(spacing: 10) {
