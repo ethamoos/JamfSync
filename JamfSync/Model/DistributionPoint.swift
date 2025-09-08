@@ -168,6 +168,11 @@ class DistributionPoint: Identifiable {
         throw DistributionPointError.programError
     }
 
+    /// This is called on the destination distribution point after all files have been transferred.
+    /// If this is not overridden by a specific distrubtion point, then this does nothing.
+    func finalizeTransfer() async throws {
+    }
+
     /// Deletes a file from this distribution point.
     /// This function must be overridden by a child distribution point class.
     /// - Parameters:
@@ -397,6 +402,9 @@ class DistributionPoint: Identifiable {
         if let lastFile, lastFileTansferred {
             progress.finalProgressValues(totalBytesTransferred: lastFile.size ?? 0, currentTotalSizeTransferred: currentTotalSizeTransferred)
         }
+
+        try await dstDp.finalizeTransfer()
+
         inProgressDstDp = nil
         if someFilesFailed {
             if someFileSucceeded {

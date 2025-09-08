@@ -303,7 +303,7 @@ class JamfProInstance: SavableItem {
         guard let url = url else { throw ServerCommunicationError.noToken }
         let tokenUrl: URL
         if useClientApi {
-            tokenUrl = url.appendingPathComponent("api/oauth/token")
+            tokenUrl = url.appendingPathComponent("api/v1/oauth/token")
         } else {
             tokenUrl = url.appendingPathComponent("api/v1/auth/token")
         }
@@ -425,11 +425,20 @@ class JamfProInstance: SavableItem {
         // Try to get the information for a non-existent file. If it returns a 500, then JCDS2 is not supported. If it returns 404, then it's good.
         let cloudUploadCapabilityUrl = url.appendingPathComponent("/api/v1/cloud-distribution-point/upload-capability")
 
-        let response = try await dataRequest(url: cloudUploadCapabilityUrl, httpMethod: "GET")
-        if let data = response.data {
-            let decoder = JSONDecoder()
-            if let jsonCloudDpUploadCapability = try? decoder.decode(JsonCloudDpUploadCapability.self, from: data) {
-                return jsonCloudDpUploadCapability.principalDistributionTechnology == true
+        do {
+            let response = try await dataRequest(url: cloudUploadCapabilityUrl, httpMethod: "GET")
+            if let data = response.data {
+                let decoder = JSONDecoder()
+                if let jsonCloudDpUploadCapability = try? decoder.decode(JsonCloudDpUploadCapability.self, from: data) {
+                    return jsonCloudDpUploadCapability.principalDistributionTechnology == true
+                }
+            }
+        } catch let ServerCommunicationError.dataRequestFailed(statusCode, message) {
+            if statusCode == 404 {
+                return false
+            } else {
+                // Rethrow the error
+                throw ServerCommunicationError.dataRequestFailed(statusCode: statusCode, message: message)
             }
         }
         return false
@@ -437,21 +446,23 @@ class JamfProInstance: SavableItem {
 
     private func hasUapiPackagesInterface() async throws -> Bool {
         guard let jamfProVersion else { return false }
-        // If it's version 11.5 or greater, then it's supported
-        let versionParts = jamfProVersion.split(separator: ".")
-        if versionParts.count >= 2 {
-            if let majorVersion = Int(versionParts[0]), let minorVersion = Int(versionParts[1]) {
-                if majorVersion > 11 {
-                    return true
-                } else if majorVersion == 11 && minorVersion >= 5 {
-                    return true
-                }
-            }
-        }
-        return false
+        return VersionInfo.versionIsAtLeast(version: jamfProVersion, major: 11, minor: 5)
     }
 
     private func loadFileShares() async throws {
+        if await hasNewFileShareApi() {
+            try await loadFileSharesV1Api()
+        } else {
+            try await loadFileSharesLegacyApi()
+        }
+    }
+
+    private func hasNewFileShareApi() async -> Bool {
+        guard let jamfProVersion else { return false }
+        return VersionInfo.versionIsAtLeast(version: jamfProVersion, major: 11, minor: 6)
+    }
+
+    private func loadFileSharesLegacyApi() async throws {
         guard let url = url else { throw ServerCommunicationError.noJamfProUrl }
         let fileSharesUrl = url.appendingPathComponent("JSSResource/distributionpoints")
 
@@ -472,6 +483,30 @@ class JamfProInstance: SavableItem {
         }
     }
 
+    private func loadFileSharesV1Api() async throws {
+        guard let url = url else { throw ServerCommunicationError.noJamfProUrl }
+        let fileSharesUrl = url.appendingPathComponent("api/v1/distribution-points").appending(queryItems: [URLQueryItem(name: "page", value: "0"), URLQueryItem(name: "page-size", value: "100")])
+
+        fileShares.removeAll()
+        do {
+            let response = try await dataRequest(url: fileSharesUrl, httpMethod: "GET")
+            if let data = response.data {
+                let decoder = JSONDecoder()
+                if let jsonDps = try? decoder.decode(JsonUapiDistributionPoint.self, from: data) {
+                    for dp in jsonDps.results {
+                        let fileShare = FileShareDp(jsonUapiDpDetail: dp)
+                        fileShare.jamfProInstanceId = id
+                        fileShare.jamfProInstanceName = name
+                       fileShares.append(fileShare)
+                    }
+                }
+            }
+        } catch let error {
+            LogManager.shared.logMessage(message: "Failed to get fileshare information from \(name): \(error)", level: .error)
+            throw error
+        }
+    }
+
     private func loadFileShare(fileShare: JsonDp) async throws {
         guard let url = url else { throw ServerCommunicationError.noJamfProUrl }
         let fileShareUrl = url.appendingPathComponent("JSSResource/distributionpoints/id/\(fileShare.id)")
@@ -481,7 +516,7 @@ class JamfProInstance: SavableItem {
                 do {
                     let decoder = JSONDecoder()
                     let jsonFileShare = try decoder.decode(JsonDpItem.self, from: data)
-                    let fileShare = FileShareDp(JsonDpDetail: jsonFileShare.distribution_point)
+                    let fileShare = FileShareDp(jsonDpDetail: jsonFileShare.distribution_point)
                     fileShare.jamfProInstanceId = id
                     fileShare.jamfProInstanceName = name
                    fileShares.append(fileShare)
