@@ -71,6 +71,19 @@ class GeneralCloudDp: DistributionPoint {
         try await uploadToCloud(packageId: jamfProId, fileUrl: fileUrl, progress: progress, jamfProInstance: jamfProInstance)
     }
 
+    override func finalizeTransfer() async throws {
+        guard let jamfProInstanceId, let jamfProInstance = findJamfProInstance(id: jamfProInstanceId), let url = jamfProInstance.url else { throw ServerCommunicationError.noJamfProUrl }
+        // NOTE: This API will be deprecated soon. It will most likely be /api/v1/cloud-distribution-point/refresh-inventory.
+        let refreshInventoryUrl = url.appendingPathComponent("/api/v1/jcds/refresh-inventory")
+
+        do {
+            let _ = try await jamfProInstance.dataRequest(url: refreshInventoryUrl, httpMethod: "POST")
+            LogManager.shared.logMessage(message: "Notified Jamf Pro to refresh its inventory.", level: .info)
+        } catch {
+            LogManager.shared.logMessage(message: "Refreshing the inventory in Jamf Pro failed...the file(s) may not be available right away: \(error)", level: .warning)
+        }
+    }
+
     override func deleteFile(file: DpFile, progress: SynchronizationProgress) async throws {
         // The only way to delete files from a general cloud distribution point (non-JCDS2) is to delete the package, which happens after synchronization is completed. So this function will do nothing.
     }
