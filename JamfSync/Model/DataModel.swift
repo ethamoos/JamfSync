@@ -20,26 +20,77 @@ enum ReloadFiles {
     }
 }
 
-class DataModel: ObservableObject {
+class DataModel {
     static let noSelection = UUID()
     static let shared = DataModel()
-    @Published var settingsViewModel = SettingsViewModel()
-    @Published var srcPackageListViewModel = PackageListViewModel(isSrc: true)
-    @Published var dstPackageListViewModel = PackageListViewModel(isSrc: false)
-    @Published var savableItems: SavableItems = SavableItems()
-    @Published var dpsForSource: [DistributionPoint] = []
-    @Published var dpsForDestination: [DistributionPoint] = []
-    @Published var selectedSrcDpId = DataModel.noSelection
-    @Published var selectedDstDpId = DataModel.noSelection
-    @Published var forceSync = false
-    @Published var dryRun = false
-    @Published var showSpinner = false
-    @Published var shouldPromptForDpPassword = false
-    @Published var dpToPromptForPassword: FileShareDp?
-    @Published var shouldPromptForJamfProPassword = false
-    @Published var shouldPresentSetupSheet = false
-    @Published var shouldPresentServerSelectionSheet = false
-    @Published var synchronizationInProgress = false
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var settingsViewModel = SettingsViewModel()
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var srcPackageListViewModel = PackageListViewModel(isSrc: true)
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var dstPackageListViewModel = PackageListViewModel(isSrc: false)
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var savableItems: SavableItems = SavableItems()
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var dpsForSource: [DistributionPoint] = []
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var dpsForDestination: [DistributionPoint] = []
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var selectedSrcDpId = DataModel.noSelection
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var selectedDstDpId = DataModel.noSelection
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var forceSync = false
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var dryRun = false
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var showSpinner = false
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var shouldPromptForDpPassword = false
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var dpToPromptForPassword: FileShareDp?
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var shouldPromptForJamfProPassword = false
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var shouldPresentSetupSheet = false
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var shouldPresentServerSelectionSheet = false
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var synchronizationInProgress = false
     private var dps: [DistributionPoint] = []
     var firstLoad = true
     var promptedForJamfProInstances = false
@@ -263,3 +314,7 @@ class DataModel: ObservableObject {
         }
     }
 }
+
+#if !JAMF_SYNC_CLI
+extension DataModel: ObservableObject {}
+#endif

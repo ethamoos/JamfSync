@@ -4,10 +4,16 @@
 
 import Foundation
 
-class LogViewModel: ObservableObject {
+class LogViewModel {
     static let messageDuration = 5.0
-    @Published var logMessages: [LogMessage] = []
-    @Published var messageToShow: LogMessage?
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var logMessages: [LogMessage] = []
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var messageToShow: LogMessage?
     var observer: NSObjectProtocol?
     var timer: Timer?
 
@@ -64,3 +70,6 @@ class LogViewModel: ObservableObject {
     }
 }
 
+#if !JAMF_SYNC_CLI
+extension LogViewModel: ObservableObject {}
+#endif

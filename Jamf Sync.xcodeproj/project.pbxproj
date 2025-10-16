@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -100,6 +100,60 @@
 		84FC416A2AD898B000DCB033 /* Haversack in Frameworks */ = {isa = PBXBuildFile; productRef = 84FC41692AD898B000DCB033 /* Haversack */; };
 		84FC418B2ADD7B1000DCB033 /* StoredSettings.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84FC41892ADD7B1000DCB033 /* StoredSettings.xcdatamodeld */; };
 		84FC418E2ADD89AD00DCB033 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC418D2ADD89AD00DCB033 /* DataManager.swift */; };
+		84FDB4872E957DEC0049DAD3 /* FolderDp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CF9D02AC4B96600576E1A /* FolderDp.swift */; };
+		84FDB4882E957DEC0049DAD3 /* FolderInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840A79062ACC8EFF00161D85 /* FolderInstance.swift */; };
+		84FDB4892E957DEC0049DAD3 /* JamfProPackageApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD58362BC58E0D00E8DA23 /* JamfProPackageApi.swift */; };
+		84FDB48A2E957DEC0049DAD3 /* GeneralCloudDp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C2D272BC48A3800036999 /* GeneralCloudDp.swift */; };
+		84FDB48B2E957DEC0049DAD3 /* DpFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC6E2B2AC3631400CF6D39 /* DpFile.swift */; };
+		84FDB48C2E957DEC0049DAD3 /* SynchronizeTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC41632AD70BBA00DCB033 /* SynchronizeTask.swift */; };
+		84FDB48D2E957DEC0049DAD3 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC6E2A2AC3631400CF6D39 /* Package.swift */; };
+		84FDB48E2E957DEC0049DAD3 /* SavableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840A79022ACB75FC00161D85 /* SavableItem.swift */; };
+		84FDB48F2E957DEC0049DAD3 /* DistributionPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC6E282AC3631400CF6D39 /* DistributionPoint.swift */; };
+		84FDB4902E957DEC0049DAD3 /* Checksums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E40D02B4F46FD003D1940 /* Checksums.swift */; };
+		84FDB4912E957DEC0049DAD3 /* SynchronizationProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC41612AD7097300DCB033 /* SynchronizationProgress.swift */; };
+		84FDB4922E957DEC0049DAD3 /* DpFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC6E302AC3631400CF6D39 /* DpFiles.swift */; };
+		84FDB4932E957DEC0049DAD3 /* LogMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2AE752AF85EC700AE8284 /* LogMessage.swift */; };
+		84FDB4942E957DEC0049DAD3 /* JamfProInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CF9D22AC4C76A00576E1A /* JamfProInstance.swift */; };
+		84FDB4952E957DEC0049DAD3 /* SavableItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA65E22AD057E10058D291 /* SavableItems.swift */; };
+		84FDB4962E957DEC0049DAD3 /* FileShareDp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC6E2C2AC3631400CF6D39 /* FileShareDp.swift */; };
+		84FDB4972E957DEC0049DAD3 /* JamfProPackageUApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD583C2BC5C9A600E8DA23 /* JamfProPackageUApi.swift */; };
+		84FDB4982E957DEC0049DAD3 /* JamfProPackageClassicApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD58382BC58F2E00E8DA23 /* JamfProPackageClassicApi.swift */; };
+		84FDB4992E957DEC0049DAD3 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E2AE732AF85DFE00AE8284 /* LogManager.swift */; };
+		84FDB49B2E957DEC0049DAD3 /* JsonObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC6E2D2AC3631400CF6D39 /* JsonObjects.swift */; };
+		84FDB49C2E957DEC0049DAD3 /* Checksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC6E272AC3631400CF6D39 /* Checksum.swift */; };
+		84FDB49D2E957DEC0049DAD3 /* Jcds2Dp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC6E2F2AC3631400CF6D39 /* Jcds2Dp.swift */; };
+		84FDB49E2E957DEC0049DAD3 /* JamfProServerSelectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847864ED2D40529D00A95E94 /* JamfProServerSelectionItem.swift */; };
+		84FDB4A02E957DFF0049DAD3 /* DpFilesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E40D62B50A26A003D1940 /* DpFilesViewModel.swift */; };
+		84FDB4A22E957DFF0049DAD3 /* DpFileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E40D42B50A07A003D1940 /* DpFileViewModel.swift */; };
+		84FDB4B72E996CBA0049DAD3 /* Haversack in Frameworks */ = {isa = PBXBuildFile; productRef = 84FDB4B62E996CBA0049DAD3 /* Haversack */; };
+		84FDB4B92E996CBA0049DAD3 /* libSubprocess in Frameworks */ = {isa = PBXBuildFile; productRef = 84FDB4B82E996CBA0049DAD3 /* libSubprocess */; };
+		84FDB4BA2E996CDB0049DAD3 /* TemporaryFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF5E392CC15FB4008B07A1 /* TemporaryFiles.swift */; };
+		84FDB4BB2E996CFA0049DAD3 /* FileManager+moveRetainingPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CAB0E42C25C47400582D59 /* FileManager+moveRetainingPermissions.swift */; };
+		84FDB4BC2E996D110049DAD3 /* URL+isDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD583A2BC5C2A700E8DA23 /* URL+isDirectory.swift */; };
+		84FDB4BD2E996D1C0049DAD3 /* ArgumentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4899D2B5C623500FFFE59 /* ArgumentParser.swift */; };
+		84FDB4BE2E996D1C0049DAD3 /* XmlErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412279E2BEADBB20097B83E /* XmlErrorParser.swift */; };
+		84FDB4C02E996D1C0049DAD3 /* VersionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849FC3402BD06A43008BAC02 /* VersionInfo.swift */; };
+		84FDB4C12E996D1C0049DAD3 /* CommandLineProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F258B42B76C81C00B8F401 /* CommandLineProcessing.swift */; };
+		84FDB4C22E996D1C0049DAD3 /* FileShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC6E4A2AC38C6200CF6D39 /* FileShare.swift */; };
+		84FDB4C32E996D1C0049DAD3 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC41652AD895F400DCB033 /* KeychainHelper.swift */; };
+		84FDB4C42E996D1C0049DAD3 /* CloudSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AB59C42B20D569007333AD /* CloudSessionDelegate.swift */; };
+		84FDB4C52E996D1C0049DAD3 /* FileShares.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3331C2B48BEEF0037E4E5 /* FileShares.swift */; };
+		84FDB4C62E996D1C0049DAD3 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E489982B5AC80600FFFE59 /* UserSettings.swift */; };
+		84FDB4C72E996D1C0049DAD3 /* CharacterSet_rfc3986Unreserved.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C2D252BC47B3300036999 /* CharacterSet_rfc3986Unreserved.swift */; };
+		84FDB4C82E996D1C0049DAD3 /* OutputStream_write.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468917D2BCEC4BB00B9FCA4 /* OutputStream_write.swift */; };
+		84FDB4C92E996D1C0049DAD3 /* FileHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84761C9F2AFEE259006BBF72 /* FileHash.swift */; };
+		84FDB4CA2E996D9C0049DAD3 /* DataPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EBFE9A2B348A77008E502C /* DataPersistence.swift */; };
+		84FDB4CB2E996F3E0049DAD3 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC418D2ADD89AD00DCB033 /* DataManager.swift */; };
+		84FDB4CC2E9973720049DAD3 /* StoredSettings.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84FC41892ADD7B1000DCB033 /* StoredSettings.xcdatamodeld */; };
+		84FDB4CD2E9976600049DAD3 /* KeepAwake.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9899B22C9A7A77000C36B7 /* KeepAwake.swift */; };
+		84FDB4CE2E99766E0049DAD3 /* UploadTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84413CA02CA75A7B00363CFA /* UploadTime.swift */; };
+		84FDB4CF2E9976750049DAD3 /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84413C962CA7586300363CFA /* MultipartUpload.swift */; };
+		84FDB4D02E99767D0049DAD3 /* CompletedChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9899B62C9A8C4B000C36B7 /* CompletedChunk.swift */; };
+		84FDB4D12E998A830049DAD3 /* PackageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E40D22B505404003D1940 /* PackageListViewModel.swift */; };
+		84FDB4D32E998B170049DAD3 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC6E2E2AC3631400CF6D39 /* DataModel.swift */; };
+		84FDB4D72E998CB60049DAD3 /* Cleanup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FDB4D62E998CAD0049DAD3 /* Cleanup.swift */; };
+		84FDB4D82E998CB60049DAD3 /* Cleanup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FDB4D62E998CAD0049DAD3 /* Cleanup.swift */; };
+		84FDB4D92E9990ED0049DAD3 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF61AA2CC94DD5008B07A1 /* SettingsViewModel.swift */; };
 		CE9899B32C9A7A77000C36B7 /* KeepAwake.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9899B22C9A7A77000C36B7 /* KeepAwake.swift */; };
 		CE9899B72C9A8C4B000C36B7 /* CompletedChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9899B62C9A8C4B000C36B7 /* CompletedChunk.swift */; };
 /* End PBXBuildFile section */
@@ -120,6 +174,18 @@
 			remoteInfo = JamfSync;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84FDB47E2E957DCA0049DAD3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		840A79002ACB6E8200161D85 /* SaveableItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveableItemListView.swift; sourceTree = "<group>"; };
@@ -219,9 +285,16 @@
 		84FC41652AD895F400DCB033 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 		84FC418A2ADD7B1000DCB033 /* StoredSettings.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StoredSettings.xcdatamodel; sourceTree = "<group>"; };
 		84FC418D2ADD89AD00DCB033 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		84FDB4802E957DCA0049DAD3 /* JamfSyncCLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JamfSyncCLI; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FDB4D62E998CAD0049DAD3 /* Cleanup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cleanup.swift; sourceTree = "<group>"; };
+		84FDB4DA2E99BBA90049DAD3 /* JamfSyncCLI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JamfSyncCLI.entitlements; sourceTree = "<group>"; };
 		CE9899B22C9A7A77000C36B7 /* KeepAwake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeepAwake.swift; sourceTree = "<group>"; };
 		CE9899B62C9A8C4B000C36B7 /* CompletedChunk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedChunk.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		84FDB4812E957DCA0049DAD3 /* JamfSyncCLI */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = JamfSyncCLI; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		84BC6DED2AC3122100CF6D39 /* Frameworks */ = {
@@ -247,6 +320,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84FDB47D2E957DCA0049DAD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FDB4B72E996CBA0049DAD3 /* Haversack in Frameworks */,
+				84FDB4B92E996CBA0049DAD3 /* libSubprocess in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -264,6 +346,7 @@
 		84BC6DE72AC3122100CF6D39 = {
 			isa = PBXGroup;
 			children = (
+				84FDB4DA2E99BBA90049DAD3 /* JamfSyncCLI.entitlements */,
 				841DE9DA2BA395F00092DBE7 /* User Guide */,
 				84F258B62B76E09F00B8F401 /* CHANGELOG.md */,
 				84F258B22B76BF7E00B8F401 /* LICENSE */,
@@ -272,6 +355,7 @@
 				84BC6DF22AC3122100CF6D39 /* JamfSync */,
 				84BC6E042AC3122200CF6D39 /* JamfSyncTests */,
 				84BC6E0E2AC3122200CF6D39 /* JamfSyncUITests */,
+				84FDB4812E957DCA0049DAD3 /* JamfSyncCLI */,
 				84BC6DF12AC3122100CF6D39 /* Products */,
 				84FC41682AD898B000DCB033 /* Frameworks */,
 			);
@@ -283,6 +367,7 @@
 				84BC6DF02AC3122100CF6D39 /* Jamf Sync.app */,
 				84BC6E012AC3122200CF6D39 /* Jamf SyncTests.xctest */,
 				84BC6E0B2AC3122200CF6D39 /* Jamf SyncUITests.xctest */,
+				84FDB4802E957DCA0049DAD3 /* JamfSyncCLI */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -397,6 +482,7 @@
 		84BC6E202AC312BF00CF6D39 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				84FDB4D62E998CAD0049DAD3 /* Cleanup.swift */,
 				84BF5E392CC15FB4008B07A1 /* TemporaryFiles.swift */,
 				84E4899D2B5C623500FFFE59 /* ArgumentParser.swift */,
 				848C2D252BC47B3300036999 /* CharacterSet_rfc3986Unreserved.swift */,
@@ -527,6 +613,30 @@
 			productReference = 84BC6E0B2AC3122200CF6D39 /* Jamf SyncUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		84FDB47F2E957DCA0049DAD3 /* JamfSyncCLI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FDB4862E957DCA0049DAD3 /* Build configuration list for PBXNativeTarget "JamfSyncCLI" */;
+			buildPhases = (
+				84FDB47C2E957DCA0049DAD3 /* Sources */,
+				84FDB47D2E957DCA0049DAD3 /* Frameworks */,
+				84FDB47E2E957DCA0049DAD3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				84FDB4812E957DCA0049DAD3 /* JamfSyncCLI */,
+			);
+			name = JamfSyncCLI;
+			packageProductDependencies = (
+				84FDB4B62E996CBA0049DAD3 /* Haversack */,
+				84FDB4B82E996CBA0049DAD3 /* libSubprocess */,
+			);
+			productName = JamfSyncCLI;
+			productReference = 84FDB4802E957DCA0049DAD3 /* JamfSyncCLI */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -534,7 +644,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
+				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					84BC6DEF2AC3122100CF6D39 = {
@@ -547,6 +657,9 @@
 					84BC6E0A2AC3122200CF6D39 = {
 						CreatedOnToolsVersion = 15.0;
 						TestTargetID = 84BC6DEF2AC3122100CF6D39;
+					};
+					84FDB47F2E957DCA0049DAD3 = {
+						CreatedOnToolsVersion = 26.0.1;
 					};
 				};
 			};
@@ -570,6 +683,7 @@
 				84BC6DEF2AC3122100CF6D39 /* Jamf Sync */,
 				84BC6E002AC3122200CF6D39 /* Jamf SyncTests */,
 				84BC6E0A2AC3122200CF6D39 /* Jamf SyncUITests */,
+				84FDB47F2E957DCA0049DAD3 /* JamfSyncCLI */,
 			);
 		};
 /* End PBXProject section */
@@ -626,6 +740,7 @@
 				840A79072ACC8EFF00161D85 /* FolderInstance.swift in Sources */,
 				844E40D52B50A07A003D1940 /* DpFileViewModel.swift in Sources */,
 				84FC41642AD70BBA00DCB033 /* SynchronizeTask.swift in Sources */,
+				84FDB4D82E998CB60049DAD3 /* Cleanup.swift in Sources */,
 				840A79092ACD9B0A00161D85 /* ConfirmationView.swift in Sources */,
 				84E489912B5867F800FFFE59 /* SourceDestinationView.swift in Sources */,
 				8468917E2BCEC4BB00B9FCA4 /* OutputStream_write.swift in Sources */,
@@ -710,6 +825,64 @@
 			buildActionMask = 2147483647;
 			files = (
 				84BC6E102AC3122200CF6D39 /* JamfSyncUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84FDB47C2E957DCA0049DAD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FDB4872E957DEC0049DAD3 /* FolderDp.swift in Sources */,
+				84FDB4CB2E996F3E0049DAD3 /* DataManager.swift in Sources */,
+				84FDB4882E957DEC0049DAD3 /* FolderInstance.swift in Sources */,
+				84FDB4892E957DEC0049DAD3 /* JamfProPackageApi.swift in Sources */,
+				84FDB48A2E957DEC0049DAD3 /* GeneralCloudDp.swift in Sources */,
+				84FDB48B2E957DEC0049DAD3 /* DpFile.swift in Sources */,
+				84FDB48C2E957DEC0049DAD3 /* SynchronizeTask.swift in Sources */,
+				84FDB48D2E957DEC0049DAD3 /* Package.swift in Sources */,
+				84FDB48E2E957DEC0049DAD3 /* SavableItem.swift in Sources */,
+				84FDB4A02E957DFF0049DAD3 /* DpFilesViewModel.swift in Sources */,
+				84FDB4CC2E9973720049DAD3 /* StoredSettings.xcdatamodeld in Sources */,
+				84FDB4A22E957DFF0049DAD3 /* DpFileViewModel.swift in Sources */,
+				84FDB48F2E957DEC0049DAD3 /* DistributionPoint.swift in Sources */,
+				84FDB4902E957DEC0049DAD3 /* Checksums.swift in Sources */,
+				84FDB4D32E998B170049DAD3 /* DataModel.swift in Sources */,
+				84FDB4912E957DEC0049DAD3 /* SynchronizationProgress.swift in Sources */,
+				84FDB4BB2E996CFA0049DAD3 /* FileManager+moveRetainingPermissions.swift in Sources */,
+				84FDB4922E957DEC0049DAD3 /* DpFiles.swift in Sources */,
+				84FDB4BA2E996CDB0049DAD3 /* TemporaryFiles.swift in Sources */,
+				84FDB4932E957DEC0049DAD3 /* LogMessage.swift in Sources */,
+				84FDB4942E957DEC0049DAD3 /* JamfProInstance.swift in Sources */,
+				84FDB4CE2E99766E0049DAD3 /* UploadTime.swift in Sources */,
+				84FDB4BD2E996D1C0049DAD3 /* ArgumentParser.swift in Sources */,
+				84FDB4BE2E996D1C0049DAD3 /* XmlErrorParser.swift in Sources */,
+				84FDB4C02E996D1C0049DAD3 /* VersionInfo.swift in Sources */,
+				84FDB4C12E996D1C0049DAD3 /* CommandLineProcessing.swift in Sources */,
+				84FDB4C22E996D1C0049DAD3 /* FileShare.swift in Sources */,
+				84FDB4C32E996D1C0049DAD3 /* KeychainHelper.swift in Sources */,
+				84FDB4D72E998CB60049DAD3 /* Cleanup.swift in Sources */,
+				84FDB4CF2E9976750049DAD3 /* MultipartUpload.swift in Sources */,
+				84FDB4C42E996D1C0049DAD3 /* CloudSessionDelegate.swift in Sources */,
+				84FDB4C52E996D1C0049DAD3 /* FileShares.swift in Sources */,
+				84FDB4C62E996D1C0049DAD3 /* UserSettings.swift in Sources */,
+				84FDB4C72E996D1C0049DAD3 /* CharacterSet_rfc3986Unreserved.swift in Sources */,
+				84FDB4C82E996D1C0049DAD3 /* OutputStream_write.swift in Sources */,
+				84FDB4C92E996D1C0049DAD3 /* FileHash.swift in Sources */,
+				84FDB4952E957DEC0049DAD3 /* SavableItems.swift in Sources */,
+				84FDB4D02E99767D0049DAD3 /* CompletedChunk.swift in Sources */,
+				84FDB4962E957DEC0049DAD3 /* FileShareDp.swift in Sources */,
+				84FDB4972E957DEC0049DAD3 /* JamfProPackageUApi.swift in Sources */,
+				84FDB4982E957DEC0049DAD3 /* JamfProPackageClassicApi.swift in Sources */,
+				84FDB4992E957DEC0049DAD3 /* LogManager.swift in Sources */,
+				84FDB4BC2E996D110049DAD3 /* URL+isDirectory.swift in Sources */,
+				84FDB49B2E957DEC0049DAD3 /* JsonObjects.swift in Sources */,
+				84FDB49C2E957DEC0049DAD3 /* Checksum.swift in Sources */,
+				84FDB4D12E998A830049DAD3 /* PackageListViewModel.swift in Sources */,
+				84FDB4CD2E9976600049DAD3 /* KeepAwake.swift in Sources */,
+				84FDB4D92E9990ED0049DAD3 /* SettingsViewModel.swift in Sources */,
+				84FDB49D2E957DEC0049DAD3 /* Jcds2Dp.swift in Sources */,
+				84FDB49E2E957DEC0049DAD3 /* JamfProServerSelectionItem.swift in Sources */,
+				84FDB4CA2E996D9C0049DAD3 /* DataPersistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -989,6 +1162,38 @@
 			};
 			name = Release;
 		};
+		84FDB4842E957DCA0049DAD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = JamfSyncCLI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQ9BBYYTVG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				OTHER_SWIFT_FLAGS = "-D JAMF_SYNC_CLI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		84FDB4852E957DCA0049DAD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = JamfSyncCLI.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQ9BBYYTVG;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				OTHER_SWIFT_FLAGS = "-D JAMF_SYNC_CLI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1028,6 +1233,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		84FDB4862E957DCA0049DAD3 /* Build configuration list for PBXNativeTarget "JamfSyncCLI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FDB4842E957DCA0049DAD3 /* Debug */,
+				84FDB4852E957DCA0049DAD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -1059,6 +1273,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 84FC41672AD896AE00DCB033 /* XCRemoteSwiftPackageReference "Haversack" */;
 			productName = Haversack;
+		};
+		84FDB4B62E996CBA0049DAD3 /* Haversack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84FC41672AD896AE00DCB033 /* XCRemoteSwiftPackageReference "Haversack" */;
+			productName = Haversack;
+		};
+		84FDB4B82E996CBA0049DAD3 /* libSubprocess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84CD1BAA2BBAF573008F0DF3 /* XCRemoteSwiftPackageReference "Subprocess" */;
+			productName = libSubprocess;
 		};
 /* End XCSwiftPackageProductDependency section */
 

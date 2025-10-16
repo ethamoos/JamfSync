@@ -4,7 +4,7 @@
 
 import Foundation
 
-class FolderInstance: SavableItem, ObservableObject {
+class FolderInstance: SavableItem {
     var folderDp: FolderDp
     static let iconName = "folder"
 
@@ -66,6 +66,10 @@ class FolderInstance: SavableItem, ObservableObject {
         return nil
     }
 }
+
+#if !JAMF_SYNC_CLI
+extension FolderInstance: ObservableObject {}
+#endif
 
 extension FolderInstanceData {
     func initialize(from folderInstance: FolderInstance) {

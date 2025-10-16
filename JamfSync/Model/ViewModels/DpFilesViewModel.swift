@@ -4,8 +4,11 @@
 
 import Foundation
 
-class DpFilesViewModel: ObservableObject {
-    @Published var files: [DpFileViewModel] = []
+class DpFilesViewModel {
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var files: [DpFileViewModel] = []
     var cancelChecksumUpdate = false
 
     func removeAll() {
@@ -85,3 +88,7 @@ class DpFilesViewModel: ObservableObject {
         return files.first { $0.dpFile.name == name }
     }
 }
+
+#if !JAMF_SYNC_CLI
+extension DpFilesViewModel: ObservableObject {}
+#endif

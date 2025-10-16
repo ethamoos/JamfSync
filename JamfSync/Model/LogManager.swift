@@ -5,7 +5,7 @@
 import Foundation
 import OSLog
 
-class LogManager: ObservableObject {
+class LogManager {
     static let shared = LogManager()
     static let logMessageNotification = "com.jamfsoftware.jamfsync.logMessageNotification"
     var logMessages: [LogMessage] = []
@@ -58,3 +58,7 @@ class LogManager: ObservableObject {
         return dateFormatter.string(from: date)
     }
 }
+
+#if !JAMF_SYNC_CLI
+extension LogManager: ObservableObject {}
+#endif

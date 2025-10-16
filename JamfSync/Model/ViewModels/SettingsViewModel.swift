@@ -4,12 +4,21 @@
 
 import Foundation
 
-class SettingsViewModel: ObservableObject {
+class SettingsViewModel {
     let userSettings = UserSettings()
 
-    @Published var allowDeletionsAfterSynchronization: DeletionOptions = .none
-    @Published var allowManualDeletions: DeletionOptions = .filesAndAssociatedPackages
-    @Published var promptForJamfProInstances = false
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var allowDeletionsAfterSynchronization: DeletionOptions = .none
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var allowManualDeletions: DeletionOptions = .filesAndAssociatedPackages
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var promptForJamfProInstances = false
 
     init() {
         loadSettings()
@@ -27,3 +36,7 @@ class SettingsViewModel: ObservableObject {
         userSettings.promptForJamfProInstances = promptForJamfProInstances
     }
 }
+
+#if !JAMF_SYNC_CLI
+extension SettingsViewModel: ObservableObject {}
+#endif

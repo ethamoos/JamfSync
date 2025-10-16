@@ -4,12 +4,27 @@
 
 import Foundation
 
-class PackageListViewModel: ObservableObject {
-    @Published var dpFiles = DpFilesViewModel()
-    @Published var doChecksumCalculation = false
-    @Published var selectedDpFiles: Set<DpFile.ID> = []
-    @Published var shouldPresentConfirmationSheet = false
-    @Published var canceled = false
+class PackageListViewModel {
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var dpFiles = DpFilesViewModel()
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var doChecksumCalculation = false
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var selectedDpFiles: Set<DpFile.ID> = []
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var shouldPresentConfirmationSheet = false
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var canceled = false
     var isSrc: Bool
     private var updateTask: Task<Void, Error>?
     static let needToSortPackagesNotification = "com.jamfsoftware.jamfsync.needToSortPackages"
@@ -222,3 +237,7 @@ class PackageListViewModel: ObservableObject {
         return savableItem?.jamfProPackages()
     }
 }
+
+#if !JAMF_SYNC_CLI
+extension PackageListViewModel: ObservableObject {}
+#endif

@@ -4,12 +4,24 @@
 
 import Foundation
 
-class SynchronizationProgress: ObservableObject {
+class SynchronizationProgress {
     var totalSize: Int64?
-    @Published var operation: String?
-    @Published var currentFile: DpFile?
-    @Published var currentTotalSizeTransferred: Int64 = 0
-    @Published var currentFileSizeTransferred: Int64?
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var operation: String?
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var currentFile: DpFile?
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var currentTotalSizeTransferred: Int64 = 0
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var currentFileSizeTransferred: Int64?
     var overheadSizePerFile: Int = 0
     var printToConsole = false
     var showProgressOnConsole = false
@@ -133,3 +145,7 @@ class SynchronizationProgress: ObservableObject {
         return false
     }
 }
+
+#if !JAMF_SYNC_CLI
+extension SynchronizationProgress: ObservableObject {}
+#endif

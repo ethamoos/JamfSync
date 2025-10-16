@@ -18,10 +18,16 @@ enum FileState: String, Comparable {
     }
 }
 
-class DpFileViewModel: ObservableObject, Identifiable {
+class DpFileViewModel: Identifiable {
     var id = UUID()
-    @Published var state: FileState = .undefined
-    @Published var showChecksumSpinner = false
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var state: FileState = .undefined
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var showChecksumSpinner = false
     var dpFile: DpFile
 
     init(dpFile: DpFile, state: FileState = .undefined) {
@@ -39,3 +45,7 @@ class DpFileViewModel: ObservableObject, Identifiable {
         return formatter.string(fromByteCount: size)
     }
 }
+
+#if !JAMF_SYNC_CLI
+extension DpFileViewModel: ObservableObject {}
+#endif

@@ -4,8 +4,11 @@
 
 import Foundation
 
-class SavableItems: ObservableObject {
-    @Published var items: [SavableItem] = []
+class SavableItems {
+#if !JAMF_SYNC_CLI
+    @Published
+#endif
+    var items: [SavableItem] = []
 
     /// Create an exact duplicate that can be sent to the Setup view so if they cancel, the changes can be discarded
     func duplicate(copyId: Bool = true) -> SavableItems {
@@ -79,7 +82,9 @@ class SavableItems: ObservableObject {
         } else if let folderInstanceFound = itemFound as? FolderInstance, let folderInstance = item as? FolderInstance {
             folderInstanceFound.copy(source: folderInstance)
         }
+#if !JAMF_SYNC_CLI
         objectWillChange.send() // Changing the item in the list won't cause the views to redraw
+#endif
         return true
     }
 
@@ -90,3 +95,7 @@ class SavableItems: ObservableObject {
         return true
     }
 }
+
+#if !JAMF_SYNC_CLI
+extension SavableItems: ObservableObject {}
+#endif

@@ -5,8 +5,6 @@
 import SwiftUI
 
 final class AppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
-    let timeout = 10.0
-
     func applicationShouldTerminate(_ sender: NSApplication) -> NSApplication.TerminateReply {
         if DataModel.shared.synchronizationInProgress {
             let alert = NSAlert()
@@ -20,23 +18,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
                 return .terminateCancel
             }
         }
-        cleanup()
-        return .terminateNow
-    }
-
-    func cleanup() {
-        DataModel.shared.cancelUpdateListViewModels()
-        let group = DispatchGroup()
-        group.enter()
-        Task {
-            do {
-                try await DataModel.shared.cleanup()
-            } catch {
-                LogManager.shared.logMessage(message: "Failed to cleanup the distribution points: \(error)", level: .error)
-            }
-            group.leave()
-        }
-        if group.wait(timeout: DispatchTime.now() + timeout) != .success {
+        if !Cleanup.waitForCleanup() {
             let alert = NSAlert()
             alert.messageText = "Unmounting distribution points may have failed."
             alert.informativeText = "This may be because a distribution point was unmounted externally. Otherwise you may need to unmount these manually using Finder or locate the volume name in /Volumes and run \"diskutil unmount /Volumes/name\" from terminal."
@@ -44,6 +26,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
             alert.alertStyle = .warning
             alert.runModal()
         }
+        return .terminateNow
     }
 }
 
@@ -84,7 +67,7 @@ struct JamfSyncApp: App {
         if argumentParser.someArgumentsPassed {
             let commandLineProcessing = CommandLineProcessing(dataModel: DataModel.shared, dataPersistence: dataPersistence)
             let succeeded = commandLineProcessing.process(argumentParser: argumentParser)
-            appDelegate.cleanup()
+            _ = Cleanup.waitForCleanup()
             if succeeded {
                 exit(0)
             } else {
