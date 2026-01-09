@@ -4,3 +4,4 @@ build/
 *.gcno
 *.DS_STORE
 *.xcuserstate
+TelemetryDeckConfig.swift

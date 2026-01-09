@@ -100,6 +100,7 @@
 		84FC416A2AD898B000DCB033 /* Haversack in Frameworks */ = {isa = PBXBuildFile; productRef = 84FC41692AD898B000DCB033 /* Haversack */; };
 		84FC418B2ADD7B1000DCB033 /* StoredSettings.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84FC41892ADD7B1000DCB033 /* StoredSettings.xcdatamodeld */; };
 		84FC418E2ADD89AD00DCB033 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC418D2ADD89AD00DCB033 /* DataManager.swift */; };
+		CE15D8102F10B50E00159968 /* TelemetryDeck in Frameworks */ = {isa = PBXBuildFile; productRef = CE15D80F2F10B50E00159968 /* TelemetryDeck */; };
 		CE9899B32C9A7A77000C36B7 /* KeepAwake.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9899B22C9A7A77000C36B7 /* KeepAwake.swift */; };
 		CE9899B72C9A8C4B000C36B7 /* CompletedChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9899B62C9A8C4B000C36B7 /* CompletedChunk.swift */; };
 /* End PBXBuildFile section */
@@ -230,6 +231,7 @@
 			files = (
 				84FC416A2AD898B000DCB033 /* Haversack in Frameworks */,
 				84CD1BAC2BBB132D008F0DF3 /* Subprocess in Frameworks */,
+				CE15D8102F10B50E00159968 /* TelemetryDeck in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +488,7 @@
 			packageProductDependencies = (
 				84FC41692AD898B000DCB033 /* Haversack */,
 				84CD1BAB2BBB132D008F0DF3 /* Subprocess */,
+				CE15D80F2F10B50E00159968 /* TelemetryDeck */,
 			);
 			productName = JamfSync;
 			productReference = 84BC6DF02AC3122100CF6D39 /* Jamf Sync.app */;
@@ -562,6 +565,7 @@
 			packageReferences = (
 				84FC41672AD896AE00DCB033 /* XCRemoteSwiftPackageReference "Haversack" */,
 				84CD1BAA2BBAF573008F0DF3 /* XCRemoteSwiftPackageReference "Subprocess" */,
+				CE15D80E2F10B50E00159968 /* XCRemoteSwiftPackageReference "SwiftSDK" */,
 			);
 			productRefGroup = 84BC6DF12AC3122100CF6D39 /* Products */;
 			projectDirPath = "";
@@ -1047,6 +1051,14 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		CE15D80E2F10B50E00159968 /* XCRemoteSwiftPackageReference "SwiftSDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TelemetryDeck/SwiftSDK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.11.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1059,6 +1071,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 84FC41672AD896AE00DCB033 /* XCRemoteSwiftPackageReference "Haversack" */;
 			productName = Haversack;
+		};
+		CE15D80F2F10B50E00159968 /* TelemetryDeck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE15D80E2F10B50E00159968 /* XCRemoteSwiftPackageReference "SwiftSDK" */;
+			productName = TelemetryDeck;
 		};
 /* End XCSwiftPackageProductDependency section */
 
