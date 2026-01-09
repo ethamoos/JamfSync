@@ -51,12 +51,12 @@ final class AppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
 @main
 struct JamfSyncApp: App {
     init() {
-        let config = TelemetryDeck.Config(appID: "YOUR-APP-ID")
-        TelemetryDeck.initialize(config: config)
+        initializeTelemetryDeck()
     }
 
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @StateObject var dataPersistence = DataPersistence(dataManager: DataManager())
+    @AppStorage("optOut") var optOut: Bool = false
 
     var body: some Scene {
         WindowGroup {

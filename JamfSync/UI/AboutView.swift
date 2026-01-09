@@ -5,17 +5,24 @@
 import SwiftUI
 
 struct AboutView: View {
-    var body: some View {
-        HStack(alignment: .top) {
-            Image("JamfSync_64")
-            VStack(alignment: .leading) {
-                Text("Jamf Sync")
-                    .font(.title)
-                Text("\(VersionInfo().getDisplayVersion())")
+    
+    @AppStorage("optOut") private var optOut: Bool = false
 
-                Text("Jamf Sync helps synchronize content to Jamf Pro distribution points.\n\nCopyright 2024, Jamf")
-                    .padding([.top])
+    var body: some View {
+        VStack(alignment: .leading) {
+            HStack(alignment: .top) {
+                Image("JamfSync_64")
+                VStack(alignment: .leading) {
+                    Text("Jamf Sync")
+                        .font(.title)
+                    Text("\(VersionInfo().getDisplayVersion())")
+                    
+                    Text("Jamf Sync helps synchronize content to Jamf Pro distribution points.\n\nCopyright 2024, Jamf")
+                        .padding([.top])
+                }
             }
+            Toggle("Opt out of analytics", isOn: $optOut)
+                        .padding()
         }
         .padding()
         .frame(minWidth: 530, minHeight: 150)
