@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xcodebuild -project \"/Users/admin/Documents/core/JamfSync/Jamf Sync.xcodeproj\" -list)",
+      "Bash(cd \"/Users/admin/Documents/core/JamfSync\" && xcodebuild test -project \"Jamf Sync.xcodeproj\" -scheme \"Jamf Sync\" -destination 'platform=macOS' -enableCodeCoverage YES 2>&1 | tee /tmp/test_output.log)",
+      "Bash(xcrun xccov:*)"
+    ]
+  }
+}

@@ -130,6 +130,8 @@
 		841227A02BEADD6E0097B83E /* XmlErrorParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlErrorParserTests.swift; sourceTree = "<group>"; };
 		841DE9D82BA395900092DBE7 /* Jamf Sync User Guide.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Jamf Sync User Guide.pdf"; sourceTree = "<group>"; };
 		841DE9DA2BA395F00092DBE7 /* User Guide */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "User Guide"; sourceTree = "<group>"; };
+		8422AF602F6076BA0019C2DE /* AGENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AGENTS.md; sourceTree = "<group>"; };
+		8422AF612F6076BA0019C2DE /* CLAUDE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CLAUDE.md; sourceTree = "<group>"; };
 		843BE0F52AEFE6350053431B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84413C962CA7586300363CFA /* MultipartUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartUpload.swift; sourceTree = "<group>"; };
 		84413CA02CA75A7B00363CFA /* UploadTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTime.swift; sourceTree = "<group>"; };
@@ -264,6 +266,8 @@
 		84BC6DE72AC3122100CF6D39 = {
 			isa = PBXGroup;
 			children = (
+				8422AF602F6076BA0019C2DE /* AGENTS.md */,
+				8422AF612F6076BA0019C2DE /* CLAUDE.md */,
 				841DE9DA2BA395F00092DBE7 /* User Guide */,
 				84F258B62B76E09F00B8F401 /* CHANGELOG.md */,
 				84F258B22B76BF7E00B8F401 /* LICENSE */,
