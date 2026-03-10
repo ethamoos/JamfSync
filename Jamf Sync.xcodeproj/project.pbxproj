@@ -252,6 +252,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8422AF622F60846E0019C2DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				846499D42B64268A00A8EA7B /* DistributionPointTests.swift */,
+				846499E12B6AA7C300A8EA7B /* FileShareDpTests.swift */,
+				846499CE2B630D7700A8EA7B /* FolderDpTests.swift */,
+				846499E72B6BFCA900A8EA7B /* Jcds2DpTests.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		846499DC2B699F5E00A8EA7B /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,10 +327,7 @@
 		84BC6E042AC3122200CF6D39 /* JamfSyncTests */ = {
 			isa = PBXGroup;
 			children = (
-				846499D42B64268A00A8EA7B /* DistributionPointTests.swift */,
-				846499E12B6AA7C300A8EA7B /* FileShareDpTests.swift */,
-				846499CE2B630D7700A8EA7B /* FolderDpTests.swift */,
-				846499E72B6BFCA900A8EA7B /* Jcds2DpTests.swift */,
+				8422AF622F60846E0019C2DE /* Model */,
 				846499DC2B699F5E00A8EA7B /* Mocks */,
 				846499E32B6B080B00A8EA7B /* SynchronizeTaskTests.swift */,
 				846499D22B64165E00A8EA7B /* TestErrors.swift */,

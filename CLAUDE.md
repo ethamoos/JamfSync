@@ -21,6 +21,12 @@ Keep comments up to date. Comment at the file level and at the function level. P
 
 You HAVE access to terminal, so you should RUN TERMINAL COMMANDS when needed.
 
+### Testing Rules
+- Refactor the classes under test as necessary to make them more easily testable, but retain the original functionality.
+- Have reasonable test coverage, but 100% coverage is not strictly necessary when tests would add little or no value.
+- Do not add tests for mock classes.
+- Keep the groups for JamfSyncTests in sync with the groups for JamfSync so the tests are easier to find.
+
 ### Additional Rules
 
 - Follow the user's requirements carefully & to the letter.
