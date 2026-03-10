@@ -67,126 +67,25 @@ Only after gathering sufficient implementation context will the assistant procee
 
 ## File Directory Structure
 
-### the main web application
-web-app/
-  index.html
-  features.html
-  scripts.js
-  styles.css
+- CoreData contains the data model
+- JamfSync contains the main code for the app
+- JamfSyncTests contain the unit tests
+- JamfSyncUITests contains the UI tests
+- User Guide contains a pages document that is used to create the pdf in the Resources folder, and contains the images used in that document in a folder called Images.
 
-### an MCP server for development use
-browser-tools-mcp/
+### JamfSync directories
+- UI contains Swift UI views
+- Model contains non-UI code that is used with the views
+- Multipart contains code used for a multipart upload process
+- Utility contains code that can be used separately from views
+- Resources contain the user guide pdf, assets used by the program
 
 ## Documentation Structure
 
-- README.md: Project overview, quick start, features, and key information
-- docs/
-  - getting_started/: Installation and setup guides
-  - architecture/: Technical documentation and design decisions
-  - metrics/: Detailed metric calculations and thresholds
-  - features/: Feature-specific documentation
-  - deployment/: Deployment and production guides
-  - api/: API documentation
-  - contributing/: Development guidelines
+- README.md: Contains details about the code
+- User Guide: Instructions for end users of the program
 
 ## Design Patterns to Follow
 
-### Component Pattern
-- Purpose: Break UI into reusable, independent pieces
-- Shine When: Building repeatable elements like cards, buttons, or navigation items
-
-### CSS Module Pattern
-- Purpose: Scope styles to specific components to prevent conflicts
-- Shine When: Managing large stylesheets or team collaboration
-
-### Event Delegation Pattern
-- Purpose: Handle events efficiently for multiple elements
-- Shine When: Managing lists, tables, or dynamic content
-
-### Data-Attribute Pattern
-- Purpose: Connect HTML and JavaScript without tight coupling
-- Shine When: Building interactive features or managing state
-
-### Layout Pattern
-- Purpose: Create flexible, responsive layouts
-- Shine When: Building responsive designs or complex grid systems
-
-## JavaScript Rules
-
-### Module Pattern
-- Purpose: Encapsulate code and avoid global scope pollution
-- Use When: Organizing related functionality and maintaining privacy
-
-### Observer Pattern
-- Purpose: Enable one-to-many dependency relationships between objects
-- Example: Event listeners, pub/sub systems
-- Use When: Building event-driven features or state management
-
-### Factory Pattern
-- Purpose: Create objects without explicitly specifying their exact class
-- Use When: Creating multiple variations of similar objects dynamically
-
-## CSS Rules
-
-### BEM Pattern (Block Element Modifier)
-- Purpose: Structured naming convention for maintainable CSS
-- Example: .card__title--large
-- Use When: Building scalable component-based CSS
-
-### Container/Content Pattern
-- Purpose: Separate layout concerns from content styling
-- Example: .container handles width/padding, inner elements handle specific styles
-- Use When: Creating reusable layouts across different content types
-
-### Mobile-First Pattern
-- Purpose: Start with mobile styles as default, enhance for larger screens
-- Example: Base styles for mobile, @media queries add desktop features
-- Use When: Building responsive layouts (always)
-
 ## Anti-Patterns to Avoid
 
-- Bloated JavaScript Files: Having large, monolithic JS files that handle multiple unrelated functionalities. Instead, use modular code organization and consider component-based architecture.
-- CSS Specificity Wars: Overusing !important, deeply nested selectors, or overly specific selectors to override styles. Instead, use BEM/CUBE CSS methodology and maintain a clear CSS architecture.
-- Global CSS/JavaScript: Relying heavily on global styles and scripts that affect the entire application. Instead, use CSS modules, scoped styles, or CSS-in-JS solutions for better encapsulation.
-- Event Handler Soup: Attaching too many event listeners directly to DOM elements or using inline event handlers. Instead, use event delegation and maintain clean separation of concerns.
-- Non-Semantic HTML: Using <div> and <span> for everything, ignoring semantic HTML elements. Instead, use appropriate HTML5 elements (<article>, <section>, <nav>, etc.) for better accessibility and SEO.
-- Direct DOM Manipulation: Excessive direct DOM manipulation leading to poor performance and maintainability. Instead, use modern frameworks/libraries or virtual DOM approaches when needed.
-- Unresponsive Design: Building fixed-width layouts or ignoring mobile devices. Instead, use mobile-first approach, responsive design patterns, and fluid layouts.
-- Performance Ignorance: Loading large unoptimized assets, not using lazy loading, or ignoring bundle sizes. Instead, implement proper asset optimization, code splitting, and modern loading techniques.
-- Accessibility Neglect: Not considering keyboard navigation, screen readers, or ARIA attributes. Instead, follow WCAG guidelines and test with accessibility tools.
-
-## Ruby on Rails Best Practices
-
-- Use Stimulus controllers for all JavaScript functionality
-- Keep controllers skinny, move business logic to service objects
-- Use query objects for complex database queries
-- Use form objects for complex form logic
-- Use presenters for complex view logic
-- Follow RESTful conventions
-- Use concerns for shared model/controller behavior
-- Use strong parameters for mass assignment protection
-- Use service objects for complex business operations
-- Use background jobs for time-consuming tasks
-- Cache expensive operations and queries
-- Use partial templates for reusable view components
-- Follow Ruby style guide and consistent naming conventions
-- Follow Rubocop linting
-- Write comprehensive tests (unit, integration, system)
-- Use database indexes for frequently queried columns
-- Keep models fat but organized with modules/concerns
-- Use scopes for commonly used queries
-- Validate data at model level
-- Use I18n for all user-facing strings
-- Follow SOLID principles
-- Use dependency injection when appropriate
-- Implement proper error handling and logging
-- Use environment variables for configuration
-- Keep gems up to date and secure
-- Use database transactions for data integrity
-- Implement proper authorization and authentication
-
-## Rails Main Rules
-
-You are an expert AI programming assistant that primarily focuses on Ruby on Rails 8 with Tailwind CSS, using Hotwire features Turbo and Stimulus. The app was created with the `rails new life-tracker --css tailwind` command.
-
-You always use the latest versions of Ruby on Rails, Tailwind CSS, Turbo, and Stimulus, and you are familiar with the latest features and best practices. You know that you can search documentation when needed.
