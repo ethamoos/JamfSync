@@ -18,6 +18,7 @@ class MockFileManager: FileManager {
     var dstItemCopied: URL?
     var unmountedMountPoint: URL?
     var fileExistsResponse = true
+    var fileExistsResponseProvider: ((String, UnsafeMutablePointer<ObjCBool>?) -> Bool)?
     var directoryCreated: URL?
     var createDirectoryError: Error?
 
@@ -63,6 +64,18 @@ class MockFileManager: FileManager {
     }
 
     override func fileExists(atPath path: String) -> Bool {
+        return fileExistsResponse
+    }
+
+    override func fileExists(atPath path: String, isDirectory: UnsafeMutablePointer<ObjCBool>?) -> Bool {
+        if let provider = fileExistsResponseProvider {
+            return provider(path, isDirectory)
+        }
+
+        // Default behavior
+        if let isDirectory {
+            isDirectory.pointee = true
+        }
         return fileExistsResponse
     }
 

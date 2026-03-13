@@ -15,6 +15,7 @@
 		841227A12BEADD6E0097B83E /* XmlErrorParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841227A02BEADD6E0097B83E /* XmlErrorParserTests.swift */; };
 		841DE9D92BA395900092DBE7 /* Jamf Sync User Guide.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 841DE9D82BA395900092DBE7 /* Jamf Sync User Guide.pdf */; };
 		8422B1212F6494FD0019C2DE /* CommandLineProcessingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CMDLINE123456789ABCDEF0 /* CommandLineProcessingTests.swift */; };
+		8422B1222F649B8B0019C2DE /* TemporaryFileManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = TEMPFILE123456789ABCDEF0 /* TemporaryFileManagerTests.swift */; };
 		843BE0F62AEFE6350053431B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843BE0F52AEFE6350053431B /* Assets.xcassets */; };
 		84413C972CA7586900363CFA /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84413C962CA7586300363CFA /* MultipartUpload.swift */; };
 		84413CA12CA75A7E00363CFA /* UploadTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84413CA02CA75A7B00363CFA /* UploadTime.swift */; };
@@ -65,7 +66,7 @@
 		84BC6E492AC380FD00CF6D39 /* FolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC6E482AC380FD00CF6D39 /* FolderView.swift */; };
 		84BC6E4D2AC38C6200CF6D39 /* FileShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BC6E4A2AC38C6200CF6D39 /* FileShare.swift */; };
 		84BC6E552AC4933500CF6D39 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 84BC6E542AC4933500CF6D39 /* README.md */; };
-		84BF5E3A2CC15FD3008B07A1 /* TemporaryFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF5E392CC15FB4008B07A1 /* TemporaryFiles.swift */; };
+		84BF5E3A2CC15FD3008B07A1 /* TemporaryFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF5E392CC15FB4008B07A1 /* TemporaryFileManager.swift */; };
 		84BF61A92CC93DFB008B07A1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF61A82CC93DFB008B07A1 /* SettingsView.swift */; };
 		84BF61AB2CC94DD5008B07A1 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF61AA2CC94DD5008B07A1 /* SettingsViewModel.swift */; };
 		84CAB0E52C25C47400582D59 /* FileManager+moveRetainingPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CAB0E42C25C47400582D59 /* FileManager+moveRetainingPermissions.swift */; };
@@ -188,7 +189,7 @@
 		84BC6E482AC380FD00CF6D39 /* FolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderView.swift; sourceTree = "<group>"; };
 		84BC6E4A2AC38C6200CF6D39 /* FileShare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileShare.swift; sourceTree = "<group>"; };
 		84BC6E542AC4933500CF6D39 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		84BF5E392CC15FB4008B07A1 /* TemporaryFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryFiles.swift; sourceTree = "<group>"; };
+		84BF5E392CC15FB4008B07A1 /* TemporaryFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryFileManager.swift; sourceTree = "<group>"; };
 		84BF61A82CC93DFB008B07A1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		84BF61AA2CC94DD5008B07A1 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		84CAB0E42C25C47400582D59 /* FileManager+moveRetainingPermissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+moveRetainingPermissions.swift"; sourceTree = "<group>"; };
@@ -225,6 +226,7 @@
 		CE9899B22C9A7A77000C36B7 /* KeepAwake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeepAwake.swift; sourceTree = "<group>"; };
 		CE9899B62C9A8C4B000C36B7 /* CompletedChunk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedChunk.swift; sourceTree = "<group>"; };
 		CMDLINE123456789ABCDEF0 /* CommandLineProcessingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLineProcessingTests.swift; sourceTree = "<group>"; };
+		TEMPFILE123456789ABCDEF0 /* TemporaryFileManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryFileManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,6 +336,7 @@
 				846499E32B6B080B00A8EA7B /* SynchronizeTaskTests.swift */,
 				846499D22B64165E00A8EA7B /* TestErrors.swift */,
 				841227A02BEADD6E0097B83E /* XmlErrorParserTests.swift */,
+				TEMPFILE123456789ABCDEF0 /* TemporaryFileManagerTests.swift */,
 				CMDLINE123456789ABCDEF0 /* CommandLineProcessingTests.swift */,
 				849809DA2CB8575B001F94C9 /* UploadTimeTests.swift */,
 			);
@@ -412,7 +415,7 @@
 		84BC6E202AC312BF00CF6D39 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				84BF5E392CC15FB4008B07A1 /* TemporaryFiles.swift */,
+				84BF5E392CC15FB4008B07A1 /* TemporaryFileManager.swift */,
 				84E4899D2B5C623500FFFE59 /* ArgumentParser.swift */,
 				848C2D252BC47B3300036999 /* CharacterSet_rfc3986Unreserved.swift */,
 				84AB59C42B20D569007333AD /* CloudSessionDelegate.swift */,
@@ -672,7 +675,7 @@
 				84E489972B59BBFD00FFFE59 /* PackageAnimationView.swift in Sources */,
 				84EBFE9B2B348A77008E502C /* DataPersistence.swift in Sources */,
 				84BC6E382AC3631400CF6D39 /* JsonObjects.swift in Sources */,
-				84BF5E3A2CC15FD3008B07A1 /* TemporaryFiles.swift in Sources */,
+				84BF5E3A2CC15FD3008B07A1 /* TemporaryFileManager.swift in Sources */,
 				84BC6E432AC3659600CF6D39 /* PackageListView.swift in Sources */,
 				84FC41602AD5A78C00DCB033 /* View+NSWindow.swift in Sources */,
 				84E2AE742AF85DFE00AE8284 /* LogManager.swift in Sources */,
@@ -716,6 +719,7 @@
 				849809DB2CB8575B001F94C9 /* UploadTimeTests.swift in Sources */,
 				846499D32B64165E00A8EA7B /* TestErrors.swift in Sources */,
 				846499D12B631B6A00A8EA7B /* MockFileManager.swift in Sources */,
+				8422B1222F649B8B0019C2DE /* TemporaryFileManagerTests.swift in Sources */,
 				846499CF2B630D7700A8EA7B /* FolderDpTests.swift in Sources */,
 				846499E62B6B089200A8EA7B /* MockDistributionPointSync.swift in Sources */,
 			);

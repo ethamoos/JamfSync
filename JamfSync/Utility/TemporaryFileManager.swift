@@ -11,7 +11,11 @@ enum TemporaryFileManagerError: Error {
 class TemporaryFileManager {
     let jamfSyncDirectoryName = "JamfSync"
     var tempDirectory: URL?
-    let fileManager = FileManager.default
+    var fileManager: FileManager
+
+    init(fileManager: FileManager = FileManager.default) {
+        self.fileManager = fileManager
+    }
 
     deinit {
         guard let tempDirectory else { return }
@@ -44,7 +48,7 @@ class TemporaryFileManager {
         }
         let newTempDirectory = baseUrl.appending(component: directoryName)
         var isDirectory : ObjCBool = true
-        let exists = FileManager.default.fileExists(atPath: newTempDirectory.path(), isDirectory: &isDirectory)
+        let exists = fileManager.fileExists(atPath: newTempDirectory.path(), isDirectory: &isDirectory)
         if exists {
             if isDirectory.boolValue {
                 return newTempDirectory
