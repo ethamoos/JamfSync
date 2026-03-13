@@ -14,6 +14,7 @@
 		8412279F2BEADBB20097B83E /* XmlErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412279E2BEADBB20097B83E /* XmlErrorParser.swift */; };
 		841227A12BEADD6E0097B83E /* XmlErrorParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841227A02BEADD6E0097B83E /* XmlErrorParserTests.swift */; };
 		841DE9D92BA395900092DBE7 /* Jamf Sync User Guide.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 841DE9D82BA395900092DBE7 /* Jamf Sync User Guide.pdf */; };
+		8422B1212F6494FD0019C2DE /* CommandLineProcessingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CMDLINE123456789ABCDEF0 /* CommandLineProcessingTests.swift */; };
 		843BE0F62AEFE6350053431B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843BE0F52AEFE6350053431B /* Assets.xcassets */; };
 		84413C972CA7586900363CFA /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84413C962CA7586300363CFA /* MultipartUpload.swift */; };
 		84413CA12CA75A7E00363CFA /* UploadTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84413CA02CA75A7B00363CFA /* UploadTime.swift */; };
@@ -223,6 +224,7 @@
 		84FC418D2ADD89AD00DCB033 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		CE9899B22C9A7A77000C36B7 /* KeepAwake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeepAwake.swift; sourceTree = "<group>"; };
 		CE9899B62C9A8C4B000C36B7 /* CompletedChunk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedChunk.swift; sourceTree = "<group>"; };
+		CMDLINE123456789ABCDEF0 /* CommandLineProcessingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLineProcessingTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -332,6 +334,7 @@
 				846499E32B6B080B00A8EA7B /* SynchronizeTaskTests.swift */,
 				846499D22B64165E00A8EA7B /* TestErrors.swift */,
 				841227A02BEADD6E0097B83E /* XmlErrorParserTests.swift */,
+				CMDLINE123456789ABCDEF0 /* CommandLineProcessingTests.swift */,
 				849809DA2CB8575B001F94C9 /* UploadTimeTests.swift */,
 			);
 			path = JamfSyncTests;
@@ -547,7 +550,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 2630;
 				TargetAttributes = {
 					84BC6DEF2AC3122100CF6D39 = {
 						CreatedOnToolsVersion = 15.0;
@@ -705,6 +708,7 @@
 				841227A12BEADD6E0097B83E /* XmlErrorParserTests.swift in Sources */,
 				846499E02B699FB500A8EA7B /* MockJamfProInstance.swift in Sources */,
 				846499DE2B699F8E00A8EA7B /* MockDistributionPoint.swift in Sources */,
+				8422B1212F6494FD0019C2DE /* CommandLineProcessingTests.swift in Sources */,
 				846499D52B64268A00A8EA7B /* DistributionPointTests.swift in Sources */,
 				846499E42B6B080B00A8EA7B /* SynchronizeTaskTests.swift in Sources */,
 				846499E82B6BFCA900A8EA7B /* Jcds2DpTests.swift in Sources */,
@@ -777,6 +781,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 483DWKW443;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -800,6 +805,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -841,6 +847,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 483DWKW443;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -857,6 +864,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
@@ -872,7 +880,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"JamfSync/Resources/Preview Content\"";
-				DEVELOPMENT_TEAM = 483DWKW443;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -904,7 +911,6 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"JamfSync/Resources/Preview Content\"";
-				DEVELOPMENT_TEAM = 483DWKW443;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -932,7 +938,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 483DWKW443;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
@@ -951,7 +956,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 483DWKW443;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
@@ -969,7 +973,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 483DWKW443;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
@@ -988,7 +991,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 483DWKW443;
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
