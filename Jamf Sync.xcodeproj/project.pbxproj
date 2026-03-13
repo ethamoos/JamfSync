@@ -431,7 +431,6 @@
 		84BC6E202AC312BF00CF6D39 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				84BF5E392CC15FB4008B07A1 /* TemporaryFileManager.swift */,
 				84E4899D2B5C623500FFFE59 /* ArgumentParser.swift */,
 				848C2D252BC47B3300036999 /* CharacterSet_rfc3986Unreserved.swift */,
 				84AB59C42B20D569007333AD /* CloudSessionDelegate.swift */,
@@ -442,6 +441,7 @@
 				84F3331C2B48BEEF0037E4E5 /* FileShares.swift */,
 				84FC41652AD895F400DCB033 /* KeychainHelper.swift */,
 				8468917D2BCEC4BB00B9FCA4 /* OutputStream_write.swift */,
+				84BF5E392CC15FB4008B07A1 /* TemporaryFileManager.swift */,
 				84DD583A2BC5C2A700E8DA23 /* URL+isDirectory.swift */,
 				84E489982B5AC80600FFFE59 /* UserSettings.swift */,
 				849FC3402BD06A43008BAC02 /* VersionInfo.swift */,
@@ -484,8 +484,8 @@
 		84FC418C2ADD897C00DCB033 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				84FC41892ADD7B1000DCB033 /* StoredSettings.xcdatamodeld */,
 				84FC418D2ADD89AD00DCB033 /* DataManager.swift */,
+				84FC41892ADD7B1000DCB033 /* StoredSettings.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -493,10 +493,10 @@
 		CE9899AF2C9A6A20000C36B7 /* Multipart */ = {
 			isa = PBXGroup;
 			children = (
-				84413CA02CA75A7B00363CFA /* UploadTime.swift */,
-				84413C962CA7586300363CFA /* MultipartUpload.swift */,
 				CE9899B62C9A8C4B000C36B7 /* CompletedChunk.swift */,
 				CE9899B22C9A7A77000C36B7 /* KeepAwake.swift */,
+				84413C962CA7586300363CFA /* MultipartUpload.swift */,
+				84413CA02CA75A7B00363CFA /* UploadTime.swift */,
 			);
 			path = Multipart;
 			sourceTree = "<group>";
