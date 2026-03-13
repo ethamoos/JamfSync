@@ -400,6 +400,17 @@ final class FileShareDpTests: XCTestCase {
         let superSadDmg = "SuperSad.dmg"
         mockFileManager.directoryContents = [URL(fileURLWithPath: path + happyFunPackage), URL(fileURLWithPath: path + notSoGoodToUploadFile), URL(fileURLWithPath: path + superSadDmg)]
         mockFileManager.fileAttributes = [path + happyFunPackage : [.size : Int64(12345678)], path + superSadDmg : [.size : Int64(456)]]
+        // Configure fileExists to return false for .zip files (so .pkg files aren't filtered out)
+        // and false for directory checks (so .pkg files are treated as flat packages, not fluffy)
+        mockFileManager.fileExistsResponseProvider = { path, isDirectory in
+            if path.hasSuffix(".zip") {
+                return false // No .zip file exists
+            }
+            if let isDirectory {
+                isDirectory.pointee = false // Treat as flat package, not directory
+            }
+            return true
+        }
 
         let expectationCompleted = XCTestExpectation()
         Task {

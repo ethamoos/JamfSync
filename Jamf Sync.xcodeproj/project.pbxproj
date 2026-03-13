@@ -263,8 +263,27 @@
 				846499E12B6AA7C300A8EA7B /* FileShareDpTests.swift */,
 				846499CE2B630D7700A8EA7B /* FolderDpTests.swift */,
 				846499E72B6BFCA900A8EA7B /* Jcds2DpTests.swift */,
+				846499E32B6B080B00A8EA7B /* SynchronizeTaskTests.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		8422B1232F64AE9B0019C2DE /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				CMDLINE123456789ABCDEF0 /* CommandLineProcessingTests.swift */,
+				TEMPFILE123456789ABCDEF0 /* TemporaryFileManagerTests.swift */,
+				841227A02BEADD6E0097B83E /* XmlErrorParserTests.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		8422B1242F64AEEB0019C2DE /* Multipart */ = {
+			isa = PBXGroup;
+			children = (
+				849809DA2CB8575B001F94C9 /* UploadTimeTests.swift */,
+			);
+			path = Multipart;
 			sourceTree = "<group>";
 		};
 		846499DC2B699F5E00A8EA7B /* Mocks */ = {
@@ -331,14 +350,11 @@
 		84BC6E042AC3122200CF6D39 /* JamfSyncTests */ = {
 			isa = PBXGroup;
 			children = (
-				8422AF622F60846E0019C2DE /* Model */,
 				846499DC2B699F5E00A8EA7B /* Mocks */,
-				846499E32B6B080B00A8EA7B /* SynchronizeTaskTests.swift */,
+				8422AF622F60846E0019C2DE /* Model */,
+				8422B1242F64AEEB0019C2DE /* Multipart */,
 				846499D22B64165E00A8EA7B /* TestErrors.swift */,
-				841227A02BEADD6E0097B83E /* XmlErrorParserTests.swift */,
-				TEMPFILE123456789ABCDEF0 /* TemporaryFileManagerTests.swift */,
-				CMDLINE123456789ABCDEF0 /* CommandLineProcessingTests.swift */,
-				849809DA2CB8575B001F94C9 /* UploadTimeTests.swift */,
+				8422B1232F64AE9B0019C2DE /* Utility */,
 			);
 			path = JamfSyncTests;
 			sourceTree = "<group>";
