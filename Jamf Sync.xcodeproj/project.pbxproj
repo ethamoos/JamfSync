@@ -16,6 +16,7 @@
 		841DE9D92BA395900092DBE7 /* Jamf Sync User Guide.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 841DE9D82BA395900092DBE7 /* Jamf Sync User Guide.pdf */; };
 		8422B1212F6494FD0019C2DE /* CommandLineProcessingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CMDLINE123456789ABCDEF0 /* CommandLineProcessingTests.swift */; };
 		8422B1222F649B8B0019C2DE /* TemporaryFileManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = TEMPFILE123456789ABCDEF0 /* TemporaryFileManagerTests.swift */; };
+		8422B1252F64B50E0019C2DE /* FileHashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4154F4CC0D4B5B8025ECF9D1 /* FileHashTests.swift */; };
 		843BE0F62AEFE6350053431B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843BE0F52AEFE6350053431B /* Assets.xcassets */; };
 		84413C972CA7586900363CFA /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84413C962CA7586300363CFA /* MultipartUpload.swift */; };
 		84413CA12CA75A7E00363CFA /* UploadTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84413CA02CA75A7B00363CFA /* UploadTime.swift */; };
@@ -124,6 +125,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4154F4CC0D4B5B8025ECF9D1 /* FileHashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHashTests.swift; sourceTree = "<group>"; };
 		840A79002ACB6E8200161D85 /* SaveableItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveableItemListView.swift; sourceTree = "<group>"; };
 		840A79022ACB75FC00161D85 /* SavableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavableItem.swift; sourceTree = "<group>"; };
 		840A79062ACC8EFF00161D85 /* FolderInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderInstance.swift; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 				CMDLINE123456789ABCDEF0 /* CommandLineProcessingTests.swift */,
 				TEMPFILE123456789ABCDEF0 /* TemporaryFileManagerTests.swift */,
 				841227A02BEADD6E0097B83E /* XmlErrorParserTests.swift */,
+				4154F4CC0D4B5B8025ECF9D1 /* FileHashTests.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -724,6 +727,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8422B1252F64B50E0019C2DE /* FileHashTests.swift in Sources */,
 				841227A12BEADD6E0097B83E /* XmlErrorParserTests.swift in Sources */,
 				846499E02B699FB500A8EA7B /* MockJamfProInstance.swift in Sources */,
 				846499DE2B699F8E00A8EA7B /* MockDistributionPoint.swift in Sources */,
