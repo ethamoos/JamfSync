@@ -17,6 +17,7 @@
 		8422B1212F6494FD0019C2DE /* CommandLineProcessingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CMDLINE123456789ABCDEF0 /* CommandLineProcessingTests.swift */; };
 		8422B1222F649B8B0019C2DE /* TemporaryFileManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = TEMPFILE123456789ABCDEF0 /* TemporaryFileManagerTests.swift */; };
 		8422B1252F64B50E0019C2DE /* FileHashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4154F4CC0D4B5B8025ECF9D1 /* FileHashTests.swift */; };
+		8422B1262F64B7A60019C2DE /* FileManagerMoveRetainingPermissionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829A6AA7D2850AF23277749 /* FileManagerMoveRetainingPermissionsTests.swift */; };
 		843BE0F62AEFE6350053431B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843BE0F52AEFE6350053431B /* Assets.xcassets */; };
 		84413C972CA7586900363CFA /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84413C962CA7586300363CFA /* MultipartUpload.swift */; };
 		84413CA12CA75A7E00363CFA /* UploadTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84413CA02CA75A7B00363CFA /* UploadTime.swift */; };
@@ -125,6 +126,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1829A6AA7D2850AF23277749 /* FileManagerMoveRetainingPermissionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerMoveRetainingPermissionsTests.swift; sourceTree = "<group>"; };
 		4154F4CC0D4B5B8025ECF9D1 /* FileHashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHashTests.swift; sourceTree = "<group>"; };
 		840A79002ACB6E8200161D85 /* SaveableItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveableItemListView.swift; sourceTree = "<group>"; };
 		840A79022ACB75FC00161D85 /* SavableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavableItem.swift; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 				TEMPFILE123456789ABCDEF0 /* TemporaryFileManagerTests.swift */,
 				841227A02BEADD6E0097B83E /* XmlErrorParserTests.swift */,
 				4154F4CC0D4B5B8025ECF9D1 /* FileHashTests.swift */,
+				1829A6AA7D2850AF23277749 /* FileManagerMoveRetainingPermissionsTests.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -738,6 +741,7 @@
 				846499E22B6AA7C300A8EA7B /* FileShareDpTests.swift in Sources */,
 				849809DB2CB8575B001F94C9 /* UploadTimeTests.swift in Sources */,
 				846499D32B64165E00A8EA7B /* TestErrors.swift in Sources */,
+				8422B1262F64B7A60019C2DE /* FileManagerMoveRetainingPermissionsTests.swift in Sources */,
 				846499D12B631B6A00A8EA7B /* MockFileManager.swift in Sources */,
 				8422B1222F649B8B0019C2DE /* TemporaryFileManagerTests.swift in Sources */,
 				846499CF2B630D7700A8EA7B /* FolderDpTests.swift in Sources */,

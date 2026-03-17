@@ -36,6 +36,9 @@ class MockDistributionPoint: DistributionPoint {
         errorIdx += 1
 
         transferItems.append(TransferItem(srcFile: srcFile, moveFrom: moveFrom))
+
+        // Update progress just like the real implementation does
+        progress.updateFileTransferInfo(totalBytesTransferred: srcFile.size ?? 0, bytesTransferred: srcFile.size ?? 0)
     }
     
     override func deleteFile(file: DpFile, progress: SynchronizationProgress) async throws {

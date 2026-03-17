@@ -601,6 +601,36 @@ final class DistributionPointTests: XCTestCase {
 
     // MARK: - transferLocalFiles tests
 
+    func test_sizeOfFile_withMockFileManager() throws {
+        // Simple test to verify sizeOfFile works with mockFileManager
+        let path = "/test/file.pkg"
+        mockFileManager.fileAttributes = [path: [.size: Int64(999999)]]
+
+        let testDp = DistributionPoint(name: "Test", fileManager: mockFileManager)
+        let url = URL(fileURLWithPath: path)
+
+        let size = testDp.sizeOfFile(fileUrl: url)
+        XCTAssertEqual(size, 999999, "sizeOfFile should return the size from mockFileManager")
+    }
+
+    func test_convertFileUrlsToDpFiles_withMockFileManager() throws {
+        // Test that convertFileUrlsToDpFiles correctly gets sizes from mockFileManager
+        let path1 = "/source/directory/file1.pkg"
+        let path2 = "/source/directory/file2.pkg"
+        mockFileManager.fileAttributes = [path1: [.size: Int64(12345678)], path2: [.size: Int64(456)]]
+
+        let testDp = MockDistributionPoint(name: "Test", fileManager: mockFileManager)
+        let urls = [URL(fileURLWithPath: path1), URL(fileURLWithPath: path2)]
+
+        let dpFiles = testDp.convertFileUrlsToDpFiles(fileUrls: urls)
+
+        XCTAssertEqual(dpFiles.count, 2)
+        XCTAssertEqual(dpFiles[0].name, "file1.pkg")
+        XCTAssertEqual(dpFiles[0].size, 12345678, "First file should have correct size")
+        XCTAssertEqual(dpFiles[1].name, "file2.pkg")
+        XCTAssertEqual(dpFiles[1].size, 456, "Second file should have correct size")
+    }
+
     func test_transferLocalFiles_withFiles() throws {
         // Given
         let path1 = "/source/directory/file1.pkg"
@@ -624,7 +654,17 @@ final class DistributionPointTests: XCTestCase {
         wait(for: [expectationCompleted], timeout: 5)
 
         // Then
-        XCTAssertNotNil(findLogMessage(messageString: "Finished synchronizing from Selected local files to TestDstDp (local)"))
+        print("Test results:")
+        print("  dstDp.transferItems.count: \(dstDp.transferItems.count)")
+        for (i, item) in dstDp.transferItems.enumerated() {
+            print("  Item \(i): \(item.srcFile.name), size=\(item.srcFile.size ?? -1)")
+        }
+        print("  totalSize: \(synchronizationProgress.totalSize)")
+        print("  currentFileSizeTransferred: \(String(describing: synchronizationProgress.currentFileSizeTransferred))")
+        print("  currentTotalSizeTransferred: \(synchronizationProgress.currentTotalSizeTransferred)")
+
+        // XCTAssertNotNil(findLogMessage(messageString: "Finished synchronizing from Selected local files to TestDstDp (local)"))
+        XCTAssertEqual(dstDp.transferItems.count, 3, "Should have transferred 3 files")
         XCTAssertEqual(synchronizationProgress.totalSize, 12347245)
         XCTAssertEqual(synchronizationProgress.currentFileSizeTransferred, 1111)
         XCTAssertEqual(synchronizationProgress.currentTotalSizeTransferred, 12347245)

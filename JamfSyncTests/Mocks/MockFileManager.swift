@@ -74,7 +74,7 @@ class MockFileManager: FileManager {
 
         // Default behavior
         if let isDirectory {
-            isDirectory.pointee = true
+            isDirectory.pointee = false
         }
         return fileExistsResponse
     }

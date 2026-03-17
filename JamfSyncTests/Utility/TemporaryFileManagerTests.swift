@@ -44,7 +44,10 @@ final class TemporaryFileManagerTests: XCTestCase {
 
     func test_jamfSyncTempDirectory_directoryAlreadyExists() throws {
         // Given
-        mockFileManager.fileExistsResponse = true
+        mockFileManager.fileExistsResponseProvider = { path, isDirectory in
+            isDirectory?.pointee = true // Directory exists
+            return true
+        }
 
         // When
         let result = try temporaryFileManager.jamfSyncTempDirectory()
@@ -154,7 +157,10 @@ final class TemporaryFileManagerTests: XCTestCase {
 
     func test_createTemporaryDirectory_directoryAlreadyExists() throws {
         // Given
-        mockFileManager.fileExistsResponse = true
+        mockFileManager.fileExistsResponseProvider = { path, isDirectory in
+            isDirectory?.pointee = true // Directory exists
+            return true
+        }
         let directoryName = "ExistingDirectory"
 
         // When
