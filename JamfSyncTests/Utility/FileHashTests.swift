@@ -107,18 +107,13 @@ final class FileHashTests: XCTestCase {
         // Given
         let nonExistentFile = testDirectory.appendingPathComponent("nonexistent.txt")
 
-        // Calculate expected hash for empty data (what happens when stream has no bytes)
-        let expectedHash = SHA512.hash(data: Data())
-        let expectedHashString = Data(expectedHash).hexEncodedString()
-
         // When
         let result = try await fileHash.createSHA512Hash(filePath: nonExistentFile.path)
 
         // Then
-        // InputStream(fileAtPath:) doesn't return nil for non-existent files,
-        // it returns a stream with no bytes, which hashes as empty data
-        XCTAssertNotNil(result)
-        XCTAssertEqual(result, expectedHashString, "Non-existent file should hash as empty data")
+        // FileHash.createSHA512Hash(filePath:) returns nil when the InputStream
+        // cannot be created (e.g., when the file does not exist).
+        XCTAssertNil(result, "Non-existent file should return nil hash")
     }
 
     func test_createSHA512Hash_withDirectory() async throws {
