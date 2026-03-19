@@ -4,3 +4,11 @@ build/
 *.gcno
 *.DS_STORE
 *.xcuserstate
+
+# User-specific configuration files
+settings.local.json
+.claude/settings.local.json
+.env
+.env.local
+*.local
+secrets.*
