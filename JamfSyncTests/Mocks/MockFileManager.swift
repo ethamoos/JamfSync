@@ -64,6 +64,9 @@ class MockFileManager: FileManager {
     }
 
     override func fileExists(atPath path: String) -> Bool {
+        if let provider = fileExistsResponseProvider {
+            return provider(path, nil)
+        }
         return fileExistsResponse
     }
 
