@@ -16,18 +16,49 @@ jobs:
 
     - name: Build and run tests
       run: |
+        set -o pipefail
         xcodebuild test \
           -project "Jamf Sync.xcodeproj" \
           -scheme "Jamf Sync" \
           -destination "platform=macOS" \
           -only-testing "Jamf SyncTests" \
           -enableCodeCoverage YES \
+          -resultBundlePath TestResults.xcresult \
           CODE_SIGN_IDENTITY="" \
           CODE_SIGNING_REQUIRED=NO \
-          CODE_SIGNING_ALLOWED=NO
+          CODE_SIGNING_ALLOWED=NO | tee xcodebuild.log
 
-    - name: Upload code coverage
-      uses: codecov/codecov-action@v4
+    - name: Extract and display code coverage
       if: always()
+      run: |
+        # Extract coverage data
+        xcrun xccov view --report --json TestResults.xcresult > coverage.json
+
+        # Parse and display coverage
+        coverage=$(cat coverage.json | python3 -c "import sys, json; data = json.load(sys.stdin); print(f\"{data['lineCoverage']*100:.2f}\")")
+
+        echo "## Test Coverage Report" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "**Overall Coverage:** ${coverage}%" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### Coverage by Target" >> $GITHUB_STEP_SUMMARY
+
+        # Display per-target coverage
+        cat coverage.json | python3 -c "
+        import sys, json
+        data = json.load(sys.stdin)
+        for target in data.get('targets', []):
+            name = target['name']
+            cov = target['lineCoverage'] * 100
+            print(f\"- **{name}**: {cov:.2f}%\")
+        " >> $GITHUB_STEP_SUMMARY
+
+    - name: Upload test results
+      if: always()
+      uses: actions/upload-artifact@v4
       with:
-        fail_ci_if_error: false
+        name: test-results
+        path: |
+          TestResults.xcresult
+          xcodebuild.log
+        retention-days: 30
