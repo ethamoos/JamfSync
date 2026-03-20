@@ -21,7 +21,7 @@ jobs:
           -project "Jamf Sync.xcodeproj" \
           -scheme "Jamf Sync" \
           -destination "platform=macOS" \
-          -only-testing "Jamf SyncTests" \
+          -only-testing:"Jamf SyncTests" \
           -enableCodeCoverage YES \
           -resultBundlePath TestResults.xcresult \
           CODE_SIGN_IDENTITY="" \
