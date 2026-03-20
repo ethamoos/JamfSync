@@ -21,7 +21,10 @@ jobs:
           -scheme "Jamf Sync" \
           -destination "platform=macOS" \
           -only-testing "Jamf SyncTests" \
-          -enableCodeCoverage YES
+          -enableCodeCoverage YES \
+          CODE_SIGN_IDENTITY="" \
+          CODE_SIGNING_REQUIRED=NO \
+          CODE_SIGNING_ALLOWED=NO
 
     - name: Upload code coverage
       uses: codecov/codecov-action@v4
