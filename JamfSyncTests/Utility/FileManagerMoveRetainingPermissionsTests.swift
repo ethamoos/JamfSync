@@ -9,14 +9,14 @@ final class FileManagerMoveRetainingPermissionsTests: XCTestCase {
     var fileManager: FileManager!
     var testDirectory: URL!
 
-    override func setUp() {
-        super.setUp()
+    override func setUpWithError() throws {
+        try super.setUpWithError()
         fileManager = FileManager.default
 
         // Create a unique test directory
         testDirectory = FileManager.default.temporaryDirectory
             .appendingPathComponent("FileManagerMoveTests-\(UUID().uuidString)")
-        try? FileManager.default.createDirectory(at: testDirectory, withIntermediateDirectories: true)
+        try FileManager.default.createDirectory(at: testDirectory, withIntermediateDirectories: true)
     }
 
     override func tearDown() {
