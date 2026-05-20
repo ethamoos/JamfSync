@@ -42,8 +42,7 @@ enum ReadWriteCapable {
 }
 
 class DistributionPoint: Identifiable {
-    /// Manages temporary files
-    let temporaryFileManager = TemporaryFileManager()
+    // ...existing code...
 
     /// The unique id of the distribution point.
     var id = UUID()

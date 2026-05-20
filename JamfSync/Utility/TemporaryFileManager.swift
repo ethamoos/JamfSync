@@ -67,3 +67,9 @@ class TemporaryFileManager {
         tempDirectory = try createTemporaryDirectory(directoryName: jamfSyncDirectoryName)
     }
 }
+
+// Provide a shared, process-wide TemporaryFileManager instance to maintain
+// a single temp directory for the app and preserve existing call-sites that
+// reference the global `temporaryFileManager` variable used throughout the
+// codebase (and in tests).
+let temporaryFileManager = TemporaryFileManager()
