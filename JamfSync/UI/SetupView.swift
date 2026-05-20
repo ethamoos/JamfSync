@@ -9,6 +9,7 @@ struct SetupView: View {
     @ObservedObject var dataPersistence: DataPersistence
     @ObservedObject var savableItems: SavableItems
     @StateObject var setupViewModel = SetupViewModel()
+    @ObservedObject var settingsViewModel = DataModel.shared.settingsViewModel
     @Binding var changesMade: Bool
 
     var body: some View {
@@ -88,6 +89,46 @@ struct SetupView: View {
                     }
 
                     Spacer()
+                    // Column visibility toggles
+                    Divider()
+                    VStack(alignment: .leading) {
+                        Text("Visible Columns")
+                            .font(.headline)
+                            .padding(.top)
+
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text("Source")
+                                    .font(.subheadline)
+                                Toggle("Show Size", isOn: Binding(get: { !settingsViewModel.hideSrcSizeColumn }, set: { settingsViewModel.hideSrcSizeColumn = !$0 }))
+                                    .onChange(of: settingsViewModel.hideSrcSizeColumn) { _ in
+                                        settingsViewModel.saveSettings()
+                                        DataModel.shared.updateListViewModels()
+                                    }
+                                Toggle("Show Checksum", isOn: Binding(get: { !settingsViewModel.hideSrcChecksumColumn }, set: { settingsViewModel.hideSrcChecksumColumn = !$0 }))
+                                    .onChange(of: settingsViewModel.hideSrcChecksumColumn) { _ in
+                                        settingsViewModel.saveSettings()
+                                        DataModel.shared.updateListViewModels()
+                                    }
+                            }
+                            .padding(.trailing)
+
+                            VStack(alignment: .leading) {
+                                Text("Destination")
+                                    .font(.subheadline)
+                                Toggle("Show Size", isOn: Binding(get: { !settingsViewModel.hideDstSizeColumn }, set: { settingsViewModel.hideDstSizeColumn = !$0 }))
+                                    .onChange(of: settingsViewModel.hideDstSizeColumn) { _ in
+                                        settingsViewModel.saveSettings()
+                                        DataModel.shared.updateListViewModels()
+                                    }
+                                Toggle("Show Checksum", isOn: Binding(get: { !settingsViewModel.hideDstChecksumColumn }, set: { settingsViewModel.hideDstChecksumColumn = !$0 }))
+                                    .onChange(of: settingsViewModel.hideDstChecksumColumn) { _ in
+                                        settingsViewModel.saveSettings()
+                                        DataModel.shared.updateListViewModels()
+                                    }
+                            }
+                        }
+                    }
                 }
             }
 

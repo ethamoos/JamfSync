@@ -32,7 +32,7 @@ struct PackageListView: View {
     @ObservedObject var dataModel: DataModel
     @ObservedObject var packageListViewModel: PackageListViewModel
     let stateColumnSize = 35.0
-    @State private var sortOrder = [KeyPathComparator(\DpFileViewModel.state), KeyPathComparator(\DpFileViewModel.dpFile.name), KeyPathComparator(\DpFileViewModel.dpFile.size)]
+    @State private var sortOrder = [KeyPathComparator(\DpFileViewModel.state), KeyPathComparator(\DpFileViewModel.dpFile.name), KeyPathComparator(\DpFileViewModel.dateAddedSortable), KeyPathComparator(\DpFileViewModel.lastModifiedSortable), KeyPathComparator(\DpFileViewModel.dpFile.size)]
     let publisher = NotificationCenter.default
             .publisher(for: NSNotification.Name(PackageListViewModel.needToSortPackagesNotification))
 
@@ -60,22 +60,37 @@ struct PackageListView: View {
                 TableColumn("Name", value: \.dpFile.name)
                 .width(ideal: 250)
 
-                TableColumn("Size", value: \.dpFile.sizeString) { item in
-                    Text(item.compressedSize())
-                        .help(item.dpFile.sizeString)
+                TableColumn("Date Added", value: \.dateAddedSortable) { item in
+                    Text(formatDate(item.dateAdded))
                 }
-                .width(ideal: 75)
+                .width(ideal: 150)
 
-                TableColumn("Checksum") { item in
-                    ChecksumView(packageListViewModel: packageListViewModel, file: item)
+                TableColumn("Last Modified", value: \.lastModifiedSortable) { item in
+                    Text(formatDate(item.lastModified))
                 }
-                .width(ideal: 200)
+                .width(ideal: 150)
+
+                if !(dataModel.settingsViewModel.hideSrcSizeColumn && isSrc) && !(dataModel.settingsViewModel.hideDstSizeColumn && !isSrc) {
+                    TableColumn("Size", value: \.dpFile.sizeString) { item in
+                        Text(item.compressedSize())
+                            .help(item.dpFile.sizeString)
+                    }
+                    .width(ideal: 75)
+                }
+
+                if !(dataModel.settingsViewModel.hideSrcChecksumColumn && isSrc) && !(dataModel.settingsViewModel.hideDstChecksumColumn && !isSrc) {
+                    TableColumn("Checksum") { item in
+                        ChecksumView(packageListViewModel: packageListViewModel, file: item)
+                    }
+                    .width(ideal: 200)
+                }
             }
             .onChange(of: sortOrder) {
                 packageListViewModel.dpFiles.files.sort(using: sortOrder)
                 packageListViewModel.objectWillChange.send()
             }
             .alternatingRowBackgrounds(.disabled)
+
 
             ZStack {
                 if packageListViewModel.showCalcChecksumsButton() {
@@ -164,6 +179,14 @@ struct PackageListView: View {
         .onReceive(publisher) { notification in
             packageListViewModel.dpFiles.files.sort(using: sortOrder)
         }
+    }
+
+    func formatDate(_ date: Date?) -> String {
+        guard let date = date else { return "--" }
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .short
+        return formatter.string(from: date)
     }
 
     func alertMessage() -> String {

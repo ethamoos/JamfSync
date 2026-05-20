@@ -29,6 +29,13 @@ class DpFileViewModel: ObservableObject, Identifiable {
         self.dpFile = dpFile
     }
 
+    // Expose dates for sorting/display
+    var dateAdded: Date? { dpFile.dateAdded }
+    var lastModified: Date? { dpFile.lastModified }
+    // Non-optional variants for sorting (nil -> distantPast)
+    var dateAddedSortable: Date { dpFile.dateAdded ?? Date.distantPast }
+    var lastModifiedSortable: Date { dpFile.lastModified ?? Date.distantPast }
+
     func compressedSize() -> String {
         guard let size = dpFile.size else { return "--" }
         let formatter = ByteCountFormatter()

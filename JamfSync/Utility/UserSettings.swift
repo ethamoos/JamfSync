@@ -24,6 +24,10 @@ class UserSettings {
     private let allowManualDeletionsKey = "allowManualDeletions"
     private let promptForJamfProInstancesKey = "promptForJamfProInstances"
     private let distributionPointUsernamesKey = "distributionPointUsernames"
+    private let hideSrcSizeColumnKey = "hideSrcSizeColumn"
+    private let hideSrcChecksumColumnKey = "hideSrcChecksumColumn"
+    private let hideDstSizeColumnKey = "hideDstSizeColumn"
+    private let hideDstChecksumColumnKey = "hideDstChecksumColumn"
 
     init() {
         UserDefaults.standard.register(defaults: [
@@ -34,6 +38,11 @@ class UserSettings {
             allowManualDeletionsKey: DeletionOptions.filesAndAssociatedPackages.rawValue,
             promptForJamfProInstancesKey: false,
             distributionPointUsernamesKey: [:]
+            ,
+            hideSrcSizeColumnKey: false,
+            hideSrcChecksumColumnKey: false,
+            hideDstSizeColumnKey: false,
+            hideDstChecksumColumnKey: false
             ])
     }
 
@@ -89,4 +98,25 @@ class UserSettings {
         get { return UserDefaults.standard.object(forKey: distributionPointUsernamesKey) as? [String: String] ?? [:] }
         set(value) { UserDefaults.standard.set(value, forKey: distributionPointUsernamesKey) }
     }
+
+    var hideSrcSizeColumn: Bool {
+        get { return UserDefaults.standard.bool(forKey: hideSrcSizeColumnKey) }
+        set(value) { UserDefaults.standard.set(value, forKey: hideSrcSizeColumnKey) }
+    }
+
+    var hideSrcChecksumColumn: Bool {
+        get { return UserDefaults.standard.bool(forKey: hideSrcChecksumColumnKey) }
+        set(value) { UserDefaults.standard.set(value, forKey: hideSrcChecksumColumnKey) }
+    }
+
+    var hideDstSizeColumn: Bool {
+        get { return UserDefaults.standard.bool(forKey: hideDstSizeColumnKey) }
+        set(value) { UserDefaults.standard.set(value, forKey: hideDstSizeColumnKey) }
+    }
+
+    var hideDstChecksumColumn: Bool {
+        get { return UserDefaults.standard.bool(forKey: hideDstChecksumColumnKey) }
+        set(value) { UserDefaults.standard.set(value, forKey: hideDstChecksumColumnKey) }
+    }
 }
+

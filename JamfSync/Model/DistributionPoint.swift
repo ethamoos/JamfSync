@@ -256,7 +256,17 @@ class DistributionPoint: Identifiable {
         dpFiles.files.removeAll()
         for url in directoryContents {
             if !limitFileTypes || isAcceptableForDp(url: url) {
-                let dpFile = DpFile(name: url.lastPathComponent, fileUrl: url, size: sizeOfFile(fileUrl: url))
+                // Try to extract creation and modification dates for display
+                var dateAdded: Date? = nil
+                var lastModified: Date? = nil
+                if let resourceValues = try? url.resourceValues(forKeys: [.creationDateKey, .contentModificationDateKey]) {
+                    dateAdded = resourceValues.creationDate
+                    lastModified = resourceValues.contentModificationDate
+                } else if let attrs = try? fileManager.attributesOfItem(atPath: url.path) {
+                    dateAdded = attrs[.creationDate] as? Date
+                    lastModified = attrs[.modificationDate] as? Date
+                }
+                let dpFile = DpFile(name: url.lastPathComponent, fileUrl: url, size: sizeOfFile(fileUrl: url), dateAdded: dateAdded, lastModified: lastModified)
                 dpFiles.files.append(dpFile)
             }
         }
