@@ -17,7 +17,7 @@
                BlueprintIdentifier = "84BC6DEF2AC3122100CF6D39"
                BuildableName = "Jamf Sync.app"
                BlueprintName = "Jamf Sync"
-               ReferencedContainer = "container:Jamf Sync.xcodeproj">
+               ReferencedContainer = "container:Jamf Sync AD.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -37,7 +37,7 @@
                BlueprintIdentifier = "84BC6E002AC3122200CF6D39"
                BuildableName = "Jamf SyncTests.xctest"
                BlueprintName = "Jamf SyncTests"
-               ReferencedContainer = "container:Jamf Sync.xcodeproj">
+               ReferencedContainer = "container:Jamf Sync AD.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -48,7 +48,7 @@
                BlueprintIdentifier = "84BC6E0A2AC3122200CF6D39"
                BuildableName = "Jamf SyncUITests.xctest"
                BlueprintName = "Jamf SyncUITests"
-               ReferencedContainer = "container:Jamf Sync.xcodeproj">
+               ReferencedContainer = "container:Jamf Sync AD.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -70,7 +70,7 @@
             BlueprintIdentifier = "84BC6DEF2AC3122100CF6D39"
             BuildableName = "Jamf Sync.app"
             BlueprintName = "Jamf Sync"
-            ReferencedContainer = "container:Jamf Sync.xcodeproj">
+            ReferencedContainer = "container:Jamf Sync AD.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -125,7 +125,7 @@
             BlueprintIdentifier = "84BC6DEF2AC3122100CF6D39"
             BuildableName = "Jamf Sync.app"
             BlueprintName = "Jamf Sync"
-            ReferencedContainer = "container:Jamf Sync.xcodeproj">
+            ReferencedContainer = "container:Jamf Sync AD.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
