@@ -33,6 +33,8 @@ class DataModel: ObservableObject {
     @Published var selectedDstDpId = DataModel.noSelection
     @Published var forceSync = false
     @Published var dryRun = false
+    // When true, delete operations will be simulated and not actually performed.
+    @Published var simulateDeletes = true
     @Published var showSpinner = false
     @Published var shouldPromptForDpPassword = false
     @Published var dpToPromptForPassword: FileShareDp?

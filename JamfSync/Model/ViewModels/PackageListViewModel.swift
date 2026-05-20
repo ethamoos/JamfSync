@@ -158,19 +158,40 @@ class PackageListViewModel: ObservableObject {
             let selectedDpFiles = DataModel.shared.selectedDpFilesFromSelectionIds(packageListViewModel: self)
             for dpFile in selectedDpFiles {
                 do {
-                    if let jamfProInstance, let packageApi = jamfProInstance.packageApi, selectedDp.deleteByRemovingPackage {
-                        if let package = jamfProInstance.findPackage(name: dpFile.name), let jamfProId = package.jamfProId {
-                            try await packageApi.deletePackage(packageId: jamfProId, jamfProInstance: jamfProInstance)
+                    // If simulateDeletes is enabled on the shared data model, don't perform deletes — just log what would happen.
+                    if DataModel.shared.simulateDeletes {
+                        if let jamfProInstance, let packageApi = jamfProInstance.packageApi, selectedDp.deleteByRemovingPackage {
+                            if let package = jamfProInstance.findPackage(name: dpFile.name), let jamfProId = package.jamfProId {
+                                LogManager.shared.logMessage(message: "[Simulation] Would call packageApi.deletePackage(packageId: \(jamfProId)) for package \(dpFile.name) on \(selectedDp.selectionName())", level: .info, dryRun: true)
+                            } else {
+                                LogManager.shared.logMessage(message: "[Simulation] Would attempt to delete package \(dpFile.name) on \(selectedDp.selectionName()) (package record not found)", level: .info, dryRun: true)
+                            }
+                        } else {
+                            if selectedDp.dpFiles.findDpFile(name: dpFile.name) != nil {
+                                LogManager.shared.logMessage(message: "[Simulation] Would delete file \(dpFile.name) from \(selectedDp.selectionName())", level: .info, dryRun: true)
+                            }
+                            if packagesToo, let jamfProInstance, let packageApi = jamfProInstance.packageApi, let package = jamfProInstance.findPackage(name: dpFile.name), let jamfProId = package.jamfProId {
+                                LogManager.shared.logMessage(message: "[Simulation] Would also call packageApi.deletePackage(packageId: \(jamfProId)) for package \(dpFile.name)", level: .info, dryRun: true)
+                            }
                         }
                     } else {
-                        if selectedDp.dpFiles.findDpFile(name: dpFile.name) != nil {
-                            try await selectedDp.deleteFile(file: dpFile, progress: progress)
-                        }
-                        if packagesToo, let jamfProInstance, let packageApi = jamfProInstance.packageApi, let package = jamfProInstance.findPackage(name: dpFile.name), let jamfProId = package.jamfProId {
-                            try await packageApi.deletePackage(packageId: jamfProId, jamfProInstance: jamfProInstance)
+                        if let jamfProInstance, let packageApi = jamfProInstance.packageApi, selectedDp.deleteByRemovingPackage {
+                            if let package = jamfProInstance.findPackage(name: dpFile.name), let jamfProId = package.jamfProId {
+                                try await packageApi.deletePackage(packageId: jamfProId, jamfProInstance: jamfProInstance)
+                            }
+                        } else {
+                            if selectedDp.dpFiles.findDpFile(name: dpFile.name) != nil {
+                                try await selectedDp.deleteFile(file: dpFile, progress: progress)
+                            }
+                            if packagesToo, let jamfProInstance, let packageApi = jamfProInstance.packageApi, let package = jamfProInstance.findPackage(name: dpFile.name), let jamfProId = package.jamfProId {
+                                try await packageApi.deletePackage(packageId: jamfProId, jamfProInstance: jamfProInstance)
+                            }
                         }
                     }
-                    LogManager.shared.logMessage(message: "Deleted \(dpFile.name) from \(selectedDp.selectionName())", level: .info)
+                    // If not simulating, log the successful deletion
+                    if !DataModel.shared.simulateDeletes {
+                        LogManager.shared.logMessage(message: "Deleted \(dpFile.name) from \(selectedDp.selectionName())", level: .info)
+                    }
                 } catch {
                     LogManager.shared.logMessage(message: "Failed to deleted \(dpFile.name) from \(selectedDp.selectionName()): \(error)", level: .error)
                 }

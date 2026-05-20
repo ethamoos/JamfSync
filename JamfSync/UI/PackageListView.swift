@@ -171,7 +171,11 @@ struct PackageListView: View {
         if let dp = packageListViewModel.retrieveSelectedDp(), dp.deleteByRemovingPackage, dataModel.settingsViewModel.allowManualDeletions == .filesOnly {
             packageDeletionWarning = "\n\nNOTE: \"Allow manual deletions\" in Settings is set to \"Files Only\", however, for the \"\(dp.selectionName())\" distribution point, files cannot be deleted without also deleting the associated package records."
         }
-        return "Are you sure you want to delete the \(packageListViewModel.selectedDpFiles.count) selected items?\(packageDeletionWarning)"
+        var message = "Are you sure you want to delete the \(packageListViewModel.selectedDpFiles.count) selected items?\(packageDeletionWarning)"
+        if DataModel.shared.simulateDeletes {
+            message += "\n\nNOTE: Simulation Mode is enabled — no delete operations will be performed, only logged to the console."
+        }
+        return message
     }
 
     func stateImage(fileItem: DpFileViewModel?) -> (systemName: String, color: Color?)? {

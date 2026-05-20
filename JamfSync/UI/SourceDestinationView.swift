@@ -48,6 +48,13 @@ struct SourceDestinationView: View {
                 .padding([.top, .leading])
                 .disabled(dataModel.settingsViewModel.allowManualDeletions == .none || !dataModel.dstPackageListViewModel.enableFileDeleteButton(selectedDpFiles: dataModel.dstPackageListViewModel.selectedDpFiles))
                 .help("Remove selected file(s) from destination")
+
+                Toggle(isOn: $dataModel.simulateDeletes) {
+                    Text("Simulation Mode")
+                }
+                .toggleStyle(.checkbox)
+                .padding([.top, .leading])
+                .help("When checked, delete operations will be simulated and only logged to the console")
             }
 
             ZStack {
