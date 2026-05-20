@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "84BC6DEF2AC3122100CF6D39"
-               BuildableName = "Jamf Sync.app"
-               BlueprintName = "Jamf Sync"
+               BuildableName = "Jamf Sync AD.app"
+               BlueprintName = "Jamf Sync AD"
                ReferencedContainer = "container:Jamf Sync AD.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -35,8 +35,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "84BC6E002AC3122200CF6D39"
-               BuildableName = "Jamf SyncTests.xctest"
-               BlueprintName = "Jamf SyncTests"
+               BuildableName = "Jamf Sync ADTests.xctest"
+               BlueprintName = "Jamf Sync ADTests"
                ReferencedContainer = "container:Jamf Sync AD.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -46,8 +46,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "84BC6E0A2AC3122200CF6D39"
-               BuildableName = "Jamf SyncUITests.xctest"
-               BlueprintName = "Jamf SyncUITests"
+               BuildableName = "Jamf Sync ADUITests.xctest"
+               BlueprintName = "Jamf Sync ADUITests"
                ReferencedContainer = "container:Jamf Sync AD.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -68,8 +68,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84BC6DEF2AC3122100CF6D39"
-            BuildableName = "Jamf Sync.app"
-            BlueprintName = "Jamf Sync"
+            BuildableName = "Jamf Sync AD.app"
+            BlueprintName = "Jamf Sync AD"
             ReferencedContainer = "container:Jamf Sync AD.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -123,8 +123,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "84BC6DEF2AC3122100CF6D39"
-            BuildableName = "Jamf Sync.app"
-            BlueprintName = "Jamf Sync"
+            BuildableName = "Jamf Sync AD.app"
+            BlueprintName = "Jamf Sync AD"
             ReferencedContainer = "container:Jamf Sync AD.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

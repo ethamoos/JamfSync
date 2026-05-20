@@ -162,13 +162,13 @@
 		84AB59C42B20D569007333AD /* CloudSessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSessionDelegate.swift; sourceTree = "<group>"; };
 		84B967632B74157C00D73F75 /* HelpMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpMenu.swift; sourceTree = "<group>"; };
 		84BA65E22AD057E10058D291 /* SavableItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavableItems.swift; sourceTree = "<group>"; };
-		84BC6DF02AC3122100CF6D39 /* Jamf Sync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jamf Sync.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BC6DF02AC3122100CF6D39 /* Jamf Sync AD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jamf Sync AD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BC6DF32AC3122100CF6D39 /* JamfSyncApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JamfSyncApp.swift; sourceTree = "<group>"; };
 		84BC6DF52AC3122100CF6D39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		84BC6DFA2AC3122200CF6D39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84BC6DFC2AC3122200CF6D39 /* JamfSync.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JamfSync.entitlements; sourceTree = "<group>"; };
-		84BC6E012AC3122200CF6D39 /* Jamf SyncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jamf SyncTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		84BC6E0B2AC3122200CF6D39 /* Jamf SyncUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jamf SyncUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BC6E012AC3122200CF6D39 /* Jamf Sync ADTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jamf Sync ADTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BC6E0B2AC3122200CF6D39 /* Jamf Sync ADUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jamf Sync ADUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BC6E0F2AC3122200CF6D39 /* JamfSyncUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JamfSyncUITests.swift; sourceTree = "<group>"; };
 		84BC6E272AC3631400CF6D39 /* Checksum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checksum.swift; sourceTree = "<group>"; };
 		84BC6E282AC3631400CF6D39 /* DistributionPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistributionPoint.swift; sourceTree = "<group>"; };
@@ -280,9 +280,9 @@
 		84BC6DF12AC3122100CF6D39 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				84BC6DF02AC3122100CF6D39 /* Jamf Sync.app */,
-				84BC6E012AC3122200CF6D39 /* Jamf SyncTests.xctest */,
-				84BC6E0B2AC3122200CF6D39 /* Jamf SyncUITests.xctest */,
+				84BC6DF02AC3122100CF6D39 /* Jamf Sync AD.app */,
+				84BC6E012AC3122200CF6D39 /* Jamf Sync ADTests.xctest */,
+				84BC6E0B2AC3122200CF6D39 /* Jamf Sync ADUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -470,9 +470,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		84BC6DEF2AC3122100CF6D39 /* Jamf Sync */ = {
+		84BC6DEF2AC3122100CF6D39 /* Jamf Sync AD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84BC6E152AC3122200CF6D39 /* Build configuration list for PBXNativeTarget "Jamf Sync" */;
+			buildConfigurationList = 84BC6E152AC3122200CF6D39 /* Build configuration list for PBXNativeTarget "Jamf Sync AD" */;
 			buildPhases = (
 				84BC6DEC2AC3122100CF6D39 /* Sources */,
 				84BC6DED2AC3122100CF6D39 /* Frameworks */,
@@ -482,18 +482,18 @@
 			);
 			dependencies = (
 			);
-			name = "Jamf Sync";
+			name = "Jamf Sync AD";
 			packageProductDependencies = (
 				84FC41692AD898B000DCB033 /* Haversack */,
 				84CD1BAB2BBB132D008F0DF3 /* Subprocess */,
 			);
 			productName = JamfSync;
-			productReference = 84BC6DF02AC3122100CF6D39 /* Jamf Sync.app */;
+			productReference = 84BC6DF02AC3122100CF6D39 /* Jamf Sync AD.app */;
 			productType = "com.apple.product-type.application";
 		};
-		84BC6E002AC3122200CF6D39 /* Jamf SyncTests */ = {
+		84BC6E002AC3122200CF6D39 /* Jamf Sync ADTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84BC6E182AC3122200CF6D39 /* Build configuration list for PBXNativeTarget "Jamf SyncTests" */;
+			buildConfigurationList = 84BC6E182AC3122200CF6D39 /* Build configuration list for PBXNativeTarget "Jamf Sync ADTests" */;
 			buildPhases = (
 				84BC6DFD2AC3122200CF6D39 /* Sources */,
 				84BC6DFE2AC3122200CF6D39 /* Frameworks */,
@@ -504,14 +504,14 @@
 			dependencies = (
 				84BC6E032AC3122200CF6D39 /* PBXTargetDependency */,
 			);
-			name = "Jamf SyncTests";
+			name = "Jamf Sync ADTests";
 			productName = JamfSyncTests;
-			productReference = 84BC6E012AC3122200CF6D39 /* Jamf SyncTests.xctest */;
+			productReference = 84BC6E012AC3122200CF6D39 /* Jamf Sync ADTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		84BC6E0A2AC3122200CF6D39 /* Jamf SyncUITests */ = {
+		84BC6E0A2AC3122200CF6D39 /* Jamf Sync ADUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84BC6E1B2AC3122200CF6D39 /* Build configuration list for PBXNativeTarget "Jamf SyncUITests" */;
+			buildConfigurationList = 84BC6E1B2AC3122200CF6D39 /* Build configuration list for PBXNativeTarget "Jamf Sync ADUITests" */;
 			buildPhases = (
 				84BC6E072AC3122200CF6D39 /* Sources */,
 				84BC6E082AC3122200CF6D39 /* Frameworks */,
@@ -522,9 +522,9 @@
 			dependencies = (
 				84BC6E0D2AC3122200CF6D39 /* PBXTargetDependency */,
 			);
-			name = "Jamf SyncUITests";
+			name = "Jamf Sync ADUITests";
 			productName = JamfSyncUITests;
-			productReference = 84BC6E0B2AC3122200CF6D39 /* Jamf SyncUITests.xctest */;
+			productReference = 84BC6E0B2AC3122200CF6D39 /* Jamf Sync ADUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -567,9 +567,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				84BC6DEF2AC3122100CF6D39 /* Jamf Sync */,
-				84BC6E002AC3122200CF6D39 /* Jamf SyncTests */,
-				84BC6E0A2AC3122200CF6D39 /* Jamf SyncUITests */,
+				84BC6DEF2AC3122100CF6D39 /* Jamf Sync AD */,
+				84BC6E002AC3122200CF6D39 /* Jamf Sync ADTests */,
+				84BC6E0A2AC3122200CF6D39 /* Jamf Sync ADUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -718,12 +718,12 @@
 /* Begin PBXTargetDependency section */
 		84BC6E032AC3122200CF6D39 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 84BC6DEF2AC3122100CF6D39 /* Jamf Sync */;
+			target = 84BC6DEF2AC3122100CF6D39 /* Jamf Sync AD */;
 			targetProxy = 84BC6E022AC3122200CF6D39 /* PBXContainerItemProxy */;
 		};
 		84BC6E0D2AC3122200CF6D39 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 84BC6DEF2AC3122100CF6D39 /* Jamf Sync */;
+			target = 84BC6DEF2AC3122100CF6D39 /* Jamf Sync AD */;
 			targetProxy = 84BC6E0C2AC3122200CF6D39 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -928,7 +928,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jamf Sync.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Jamf Sync";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jamf Sync AD.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Jamf Sync AD";
 			};
 			name = Debug;
 		};
@@ -947,7 +947,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jamf Sync.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Jamf Sync";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jamf Sync AD.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Jamf Sync AD";
 			};
 			name = Release;
 		};
@@ -1001,7 +1001,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84BC6E152AC3122200CF6D39 /* Build configuration list for PBXNativeTarget "Jamf Sync" */ = {
+		84BC6E152AC3122200CF6D39 /* Build configuration list for PBXNativeTarget "Jamf Sync AD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84BC6E162AC3122200CF6D39 /* Debug */,
@@ -1010,7 +1010,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84BC6E182AC3122200CF6D39 /* Build configuration list for PBXNativeTarget "Jamf SyncTests" */ = {
+		84BC6E182AC3122200CF6D39 /* Build configuration list for PBXNativeTarget "Jamf Sync ADTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84BC6E192AC3122200CF6D39 /* Debug */,
@@ -1019,7 +1019,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84BC6E1B2AC3122200CF6D39 /* Build configuration list for PBXNativeTarget "Jamf SyncUITests" */ = {
+		84BC6E1B2AC3122200CF6D39 /* Build configuration list for PBXNativeTarget "Jamf Sync ADUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84BC6E1C2AC3122200CF6D39 /* Debug */,
