@@ -37,6 +37,17 @@ struct SourceDestinationView: View {
                     dataModel.updateListViewModels()
                 }
                 .padding([.top])
+
+                // Delete button for destination: triggers the same confirmation sheet
+                // that the PackageListView uses (it listens to the same view model).
+                Button {
+                    dataModel.dstPackageListViewModel.shouldPresentConfirmationSheet = true
+                } label: {
+                    Image(systemName: "trash")
+                }
+                .padding([.top, .leading])
+                .disabled(dataModel.settingsViewModel.allowManualDeletions == .none || !dataModel.dstPackageListViewModel.enableFileDeleteButton(selectedDpFiles: dataModel.dstPackageListViewModel.selectedDpFiles))
+                .help("Remove selected file(s) from destination")
             }
 
             ZStack {
