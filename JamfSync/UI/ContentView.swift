@@ -13,6 +13,7 @@ struct ContentView: View {
     @FetchRequest(sortDescriptors: []) private var savableItems: FetchedResults<SavableItemData>
     @State private var favoriteColor = 0
     @StateObject var dataModel = DataModel.shared
+    @ObservedObject var settingsViewModel = DataModel.shared.settingsViewModel
     @State var changesMade = false
     @State var canceled = false
 
@@ -25,6 +26,10 @@ struct ContentView: View {
                 .padding([.leading, .trailing])
 
             LogMessageView()
+
+            if settingsViewModel.debugMode {
+                DebugPanelView()
+            }
         }
         .toolbar {
             Button {

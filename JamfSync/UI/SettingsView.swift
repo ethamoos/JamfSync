@@ -37,6 +37,13 @@ struct SettingsView: View {
                 }
                 .toggleStyle(SwitchToggleStyle())
                 .padding([.leading, .trailing, .bottom])
+
+            Toggle("Debug mode (show network & error messages on the main screen)", isOn: $settingsViewModel.debugMode)
+                .onChange(of: settingsViewModel.debugMode, initial: false) {
+                    settingsViewModel.saveSettings()
+                }
+                .toggleStyle(SwitchToggleStyle())
+                .padding([.leading, .trailing, .bottom])
         }
         .padding()
         .frame(width: 500)

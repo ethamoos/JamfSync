@@ -83,6 +83,7 @@
 		84E4898F2B58679600FFFE59 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4898E2B58679600FFFE59 /* HeaderView.swift */; };
 		84E489912B5867F800FFFE59 /* SourceDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E489902B5867F800FFFE59 /* SourceDestinationView.swift */; };
 		84E489932B58681D00FFFE59 /* LogMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E489922B58681D00FFFE59 /* LogMessageView.swift */; };
+		AD0DEB0200000000000FFE59 /* DebugPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0DEB0100000000000FFE59 /* DebugPanelView.swift */; };
 		84E489952B58830A00FFFE59 /* ChecksumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E489942B58830A00FFFE59 /* ChecksumView.swift */; };
 		84E489972B59BBFD00FFFE59 /* PackageAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E489962B59BBFD00FFFE59 /* PackageAnimationView.swift */; };
 		84E489992B5AC80600FFFE59 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E489982B5AC80600FFFE59 /* UserSettings.swift */; };
@@ -203,6 +204,7 @@
 		84E4898E2B58679600FFFE59 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		84E489902B5867F800FFFE59 /* SourceDestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceDestinationView.swift; sourceTree = "<group>"; };
 		84E489922B58681D00FFFE59 /* LogMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogMessageView.swift; sourceTree = "<group>"; };
+		AD0DEB0100000000000FFE59 /* DebugPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugPanelView.swift; sourceTree = "<group>"; };
 		84E489942B58830A00FFFE59 /* ChecksumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecksumView.swift; sourceTree = "<group>"; };
 		84E489962B59BBFD00FFFE59 /* PackageAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageAnimationView.swift; sourceTree = "<group>"; };
 		84E489982B5AC80600FFFE59 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
@@ -348,6 +350,7 @@
 				847864E92D3F030500A95E94 /* JamfProServerPicker.swift */,
 				84BC6E462AC380D200CF6D39 /* JamfProServerView.swift */,
 				84BC6DF32AC3122100CF6D39 /* JamfSyncApp.swift */,
+				AD0DEB0100000000000FFE59 /* DebugPanelView.swift */,
 				84E489922B58681D00FFFE59 /* LogMessageView.swift */,
 				84E2AE922AF9A09500AE8284 /* LogView.swift */,
 				84E489962B59BBFD00FFFE59 /* PackageAnimationView.swift */,
@@ -637,6 +640,7 @@
 				84BC6E472AC380D200CF6D39 /* JamfProServerView.swift in Sources */,
 				8412279F2BEADBB20097B83E /* XmlErrorParser.swift in Sources */,
 				84E489932B58681D00FFFE59 /* LogMessageView.swift in Sources */,
+				AD0DEB0200000000000FFE59 /* DebugPanelView.swift in Sources */,
 				84DD58372BC58E0D00E8DA23 /* JamfProPackageApi.swift in Sources */,
 				84DD583B2BC5C2A700E8DA23 /* URL+isDirectory.swift in Sources */,
 				84BC6E4D2AC38C6200CF6D39 /* FileShare.swift in Sources */,

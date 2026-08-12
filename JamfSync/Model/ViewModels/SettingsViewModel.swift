@@ -14,6 +14,7 @@ class SettingsViewModel: ObservableObject {
     @Published var hideSrcChecksumColumn: Bool = false
     @Published var hideDstSizeColumn: Bool = false
     @Published var hideDstChecksumColumn: Bool = false
+    @Published var debugMode: Bool = false
 
     init() {
         loadSettings()
@@ -27,6 +28,7 @@ class SettingsViewModel: ObservableObject {
         hideSrcChecksumColumn = userSettings.hideSrcChecksumColumn
         hideDstSizeColumn = userSettings.hideDstSizeColumn
         hideDstChecksumColumn = userSettings.hideDstChecksumColumn
+        debugMode = userSettings.debugMode
     }
 
     func saveSettings() {
@@ -37,5 +39,6 @@ class SettingsViewModel: ObservableObject {
         userSettings.hideSrcChecksumColumn = hideSrcChecksumColumn
         userSettings.hideDstSizeColumn = hideDstSizeColumn
         userSettings.hideDstChecksumColumn = hideDstChecksumColumn
+        userSettings.debugMode = debugMode
     }
 }

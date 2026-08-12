@@ -28,6 +28,7 @@ class UserSettings {
     private let hideSrcChecksumColumnKey = "hideSrcChecksumColumn"
     private let hideDstSizeColumnKey = "hideDstSizeColumn"
     private let hideDstChecksumColumnKey = "hideDstChecksumColumn"
+    private let debugModeKey = "debugMode"
 
     init() {
         UserDefaults.standard.register(defaults: [
@@ -42,7 +43,8 @@ class UserSettings {
             hideSrcSizeColumnKey: false,
             hideSrcChecksumColumnKey: false,
             hideDstSizeColumnKey: false,
-            hideDstChecksumColumnKey: false
+            hideDstChecksumColumnKey: false,
+            debugModeKey: false
             ])
     }
 
@@ -117,6 +119,11 @@ class UserSettings {
     var hideDstChecksumColumn: Bool {
         get { return UserDefaults.standard.bool(forKey: hideDstChecksumColumnKey) }
         set(value) { UserDefaults.standard.set(value, forKey: hideDstChecksumColumnKey) }
+    }
+
+    var debugMode: Bool {
+        get { return UserDefaults.standard.bool(forKey: debugModeKey) }
+        set(value) { UserDefaults.standard.set(value, forKey: debugModeKey) }
     }
 }
 

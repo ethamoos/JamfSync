@@ -35,4 +35,9 @@ struct LogMessage: Identifiable {
     func showOnMainScreen() -> Bool {
         return logLevel == .error || logLevel == .warning || logLevel == .info
     }
+
+    /// Messages surfaced in the debug panel to help diagnose network/connection/sync problems.
+    func showInDebugPanel() -> Bool {
+        return logLevel == .error || logLevel == .warning
+    }
 }
