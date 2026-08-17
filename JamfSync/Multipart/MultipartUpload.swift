@@ -87,9 +87,12 @@ class MultipartUpload {
 
     private func createMultipartUploadRequest(fileUrl: URL, httpMethod: String, urlQuery: String? = nil, start: Bool = false, contentType: String? = nil) throws -> URLRequest {
         let filename = fileUrl.lastPathComponent
-        var urlHostAllowedPlus = CharacterSet.urlHostAllowed
-        urlHostAllowedPlus.remove(charactersIn: "+")
-        let encodedPackageName = filename.addingPercentEncoding(withAllowedCharacters: urlHostAllowedPlus) ?? ""
+        // Encode the object key exactly once using the RFC 3986 unreserved set. This is the same
+        // encoding AWS SigV4 uses to build the canonical URI, so the key placed in the request URL
+        // and the key used to compute the signature are byte-for-byte identical. Using a different
+        // set here (e.g. urlHostAllowed, which leaves "(", ")" and other sub-delims literal) causes
+        // a SignatureDoesNotMatch error for filenames containing spaces, parentheses, brackets, etc.
+        let encodedPackageName = filename.addingPercentEncoding(withAllowedCharacters: .rfc3986Unreserved) ?? ""
 
         let bucket          = initiateUploadData.bucketName ?? ""
         let region          = initiateUploadData.region ?? ""
@@ -280,16 +283,17 @@ class MultipartUpload {
         }
         sortedHeaders = String(sortedHeaders.dropLast())
         signedHeaders = String(signedHeaders.dropLast())
-        var canonicalURI = key.removingPercentEncoding?.replacingOccurrences(of: "?uploads", with: "")
-        var allowedUrlCharacters = CharacterSet() // used to encode AWS URI headers
-        allowedUrlCharacters.formUnion(.alphanumerics)
-        allowedUrlCharacters.insert(charactersIn: "/-._~")
-        canonicalURI = canonicalURI?.addingPercentEncoding(withAllowedCharacters: allowedUrlCharacters) ?? ""
+        // The key is already percent-encoded (once) with the RFC 3986 unreserved set when the request
+        // URL is built, so the canonical URI must use that exact same encoded string. Do NOT decode it
+        // (removingPercentEncoding) and re-encode with a different character set, otherwise the signed
+        // canonical URI will differ from the path actually sent in the request and AWS will reject it
+        // with SignatureDoesNotMatch. Only the "?uploads" marker used to build the URL is stripped.
+        let canonicalURI = key.replacingOccurrences(of: "?uploads", with: "")
 
         // CANONICAL REQUEST //
         let canonicalRequest = """
         \(httpMethod.uppercased())
-        /\(canonicalURI ?? "")
+        /\(canonicalURI)
         \(queryParameters)
         \(sortedHeaders)
         
